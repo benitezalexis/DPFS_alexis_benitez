@@ -19,7 +19,7 @@ Soy Alexis Benitez, estudiante de desarrollo Full Stack. Me apasiona crear soluc
 
 ## 🔍 Sitios de referencia
 
-1. **https://www.pedidosya.com.py/mercado](https://www.pedidosya.com.py/**
+1. **https://www.pedidosya.com.py/**
    - Ofrece una experiencia de supermercado online rápida y directa.
 2. **https://www.carrefour.com.ar/**
    - Muy buen diseño de navegación por categorías y ofertas destacadas.
