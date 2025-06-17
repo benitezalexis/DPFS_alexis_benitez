@@ -1,4 +1,4 @@
-# 🛒 E-commerce de Supermercado TuSuper- DPFS_alexis_benitez
+# 🛒 E-commerce TuSuper- DPFS_alexis_benitez
 
 ## 🧠 Temática del Marketplace
 El sitio será un e-commerce de supermercado. El nombre del e-commerce se llamara **TuSuper** .El mismo Ofrecerá productos frescos, alimentos no perecederos, bebidas, productos de limpieza y artículos para el hogar.
