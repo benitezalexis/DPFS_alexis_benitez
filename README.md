@@ -25,7 +25,7 @@ Soy Alexis Benitez, estudiante de desarrollo Full Stack. Me apasiona crear soluc
    - Muy buen diseño de navegación por categorías y ofertas destacadas.
 3. **https://superseis.com.py/**
    - Ejemplo local, útil para entender qué buscan los clientes paraguayos.
-4. **https://jumbo.com.ar/**
+4. **https://www.arete.com.py/**
    - Excelente usabilidad móvil y carrito inteligente.
 5. **https://cornershopapp.com/**
    - Proceso de checkout y experiencia de usuario muy fluida.
