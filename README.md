@@ -17,3 +17,18 @@ Está dirigido principalmente a:
 ## 👨‍💻 Sobre mí
 Soy Alexis Benitez, estudiante de desarrollo Full Stack. Me apasiona crear soluciones digitales que mejoren la vida de las personas. En este proyecto busco aplicar mis conocimientos de React y Node.js para resolver una necesidad real.
 
+## 🔍 Sitios de referencia
+
+1. **https://www.pedidosya.com.py/mercado**
+   - Ofrece una experiencia de supermercado online rápida y directa.
+2. **https://www.carrefour.com.ar/**
+   - Muy buen diseño de navegación por categorías y ofertas destacadas.
+3. **https://superseis.com.py/**
+   - Ejemplo local, útil para entender qué buscan los clientes paraguayos.
+4. **https://jumbo.com.ar/**
+   - Excelente usabilidad móvil y carrito inteligente.
+5. **https://cornershopapp.com/**
+   - Proceso de checkout y experiencia de usuario muy fluida.
+
+Estos sitios fueron seleccionados por su buena estética, funcionalidades, y su similitud con el tipo de e-commerce que quiero desarrollar.
+
