@@ -1,7 +1,7 @@
 # 🛒 E-commerce TuSuperAC
 
 ## 🧠 Temática del Marketplace
-El sitio será un e-commerce de supermercado. El nombre del e-commerce se llamara **TuSuper** .El mismo Ofrecerá productos frescos, alimentos no perecederos, bebidas, productos de limpieza y artículos para el hogar.
+El sitio será un e-commerce de supermercado. El nombre del e-commerce se llamara **TuSuperAC** .El mismo Ofrecerá productos frescos, alimentos no perecederos, bebidas, productos de limpieza y artículos para el hogar.
 
 El enfoque estará en brindar:
 - Una experiencia rápida y fácil para hacer compras semanales.
