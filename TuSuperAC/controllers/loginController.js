@@ -2,7 +2,7 @@
 let loginController = {
     index: function(req, res){
         let movieList = ['Rocky', 'Batman', 'Barbie', 'Iron Man'];
-        return res.render('login', { title: 'Movies', listaPelis: movieList});
+        return res.render('users/login', { title: 'Movies', listaPelis: movieList});
     },
     show: function(req, res){
        // return res.send(`Estamos en el detalle de la película: ${req.params.id}`)

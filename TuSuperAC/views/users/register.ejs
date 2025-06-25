@@ -1,0 +1,73 @@
+ <%- include('../partials/head') %>
+
+<body>
+
+ <%- include('../partials/navBar') %>
+
+<main style="margin-top: 113px;">
+  <div class="container d-flex justify-content-center align-items-center" style="min-height: 90vh;">
+    <div class="p-4 rounded border shadow bg-white" style="width: 100%; max-width: 500px;">
+
+      <h3 class="text-center mb-4" style="color: #001F3F;">REGISTRO</h3>
+
+      <!-- Nombre -->
+      <div class="mb-3 position-relative">
+        <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+          <i class="bi bi-person"></i>
+        </span>
+        <input type="text" class="form-control ps-5 rounded-pill" placeholder="Nombre" />
+      </div>
+
+      <!-- Apellido -->
+      <div class="mb-3 position-relative">
+        <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+          <i class="bi bi-person"></i>
+        </span>
+        <input type="text" class="form-control ps-5 rounded-pill" placeholder="Apellido" />
+      </div>
+
+      <!-- Cedula / RUC -->
+      <div class="mb-3 position-relative">
+        <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+          <i class="bi bi-card-text"></i>
+        </span>
+        <input type="text" class="form-control ps-5 rounded-pill" placeholder="Cédula / RUC" />
+      </div>
+
+      <!-- Dirección -->
+      <div class="mb-3 position-relative">
+        <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+          <i class="bi bi-geo-alt"></i>
+        </span>
+        <input type="text" class="form-control ps-5 rounded-pill" placeholder="Dirección" />
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3 position-relative">
+        <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+          <i class="bi bi-envelope"></i>
+        </span>
+        <input type="email" class="form-control ps-5 rounded-pill" placeholder="Correo electrónico" />
+      </div>
+
+      <!-- Celular -->
+      <div class="mb-4 position-relative">
+        <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+          <i class="bi bi-phone"></i>
+        </span>
+        <input type="text" class="form-control ps-5 rounded-pill" placeholder="Celular" />
+      </div>
+
+      <!-- Botón -->
+      <div class="d-grid">
+        <button class="btn btn-dark rounded-1">Registrarse</button>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+
+
+ <%- include('../partials/footer') %>

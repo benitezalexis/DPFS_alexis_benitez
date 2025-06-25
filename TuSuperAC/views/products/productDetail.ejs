@@ -1,0 +1,60 @@
+ <%- include('../partials/head') %>
+<body>
+
+ <%- include('../partials/navBar') %>
+<main style="margin-top: 113px;">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      
+      <!-- Columna de imagen -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="https://arete.com.py/userfiles/images/productos/224/<%=cod%>.jpg" width="400px" alt="Imagen del producto" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- Columna de información -->
+      <div class="col-md-7">
+        <h2 class="mb-3">Nombre del Producto</h2>
+        <hr class="text-warning" />
+        <p class="text-light mb-4">
+          Esta es la descripción del producto. Aquí podés detallar los beneficios, características, o cualquier
+          información relevante que ayude al cliente a decidir su compra.
+        </p>
+
+        <!-- Contador de unidades -->
+        <div class="input-group mb-3" style="max-width: 250px;">
+          <button class="btn btn-warning" type="button" onclick="decrementarCantidad()">
+            <i class="bi bi-dash-lg"></i>
+          </button>
+          <input id="inputCantidad" type="text" class="form-control text-center" value="0.100" readonly>
+          <input type="text" class="form-control text-center bg-light" value="Kl" disabled>
+          <button class="btn btn-warning" type="button" onclick="incrementarCantidad()">
+            <i class="bi bi-plus-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let cantidad = 0.100;
+
+    function incrementarCantidad() {
+      cantidad += 0.100;
+      actualizarInput();
+    }
+
+    function decrementarCantidad() {
+      if (cantidad > 0.100) {
+        cantidad -= 0.100;
+        actualizarInput();
+      }
+    }
+
+    function actualizarInput() {
+      document.getElementById('inputCantidad').value = cantidad.toFixed(3);
+    }
+  </script>
+</main>
+
+
+ <%- include('../partials/footer') %>

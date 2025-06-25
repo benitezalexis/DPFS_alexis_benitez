@@ -1,0 +1,45 @@
+ <%- include('../partials/head') %>
+
+<body>
+
+ <%- include('../partials/navBar') %>
+
+<main style="margin-top: 113px;">
+  <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="p-4 rounded border shadow bg-white" style="width: 100%; max-width: 400px;">
+
+      <h3 class="text-center mb-4" style="color: #001F3F;">LOGIN</h3>
+
+      <!-- Campo correo -->
+      <div class="mb-3 position-relative">
+        <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+          <i class="bi bi-envelope"></i>
+        </span>
+        <input type="email" class="form-control ps-5 rounded-pill" placeholder="Correo" />
+      </div>
+
+      <!-- Campo contraseña -->
+      <div class="mb-3 position-relative">
+        <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+          <i class="bi bi-lock"></i>
+        </span>
+        <input type="password" class="form-control ps-5 rounded-pill" placeholder="Contraseña" />
+      </div>
+
+      <!-- Botón -->
+      <div class="d-grid mb-3">
+        <button class="btn btn-dark rounded-1">Iniciar sesión</button>
+      </div>
+
+      <!-- Enlaces de ayuda -->
+      <div class="text-center">
+        <a href="/forgot-password" class="d-block mb-2 text-decoration-none text-primary">¿Olvidaste tu contraseña?</a>
+        <a href="/registerClient" class="text-decoration-none text-primary">¿No tienes una cuenta? Regístrate aquí</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+ <%- include('../partials/footer') %>

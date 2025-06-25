@@ -1,0 +1,248 @@
+ <%- include('../partials/head') %>
+
+<body>
+ <%- include('../partials/navBar') %>
+  <main style="margin-top: 113px;">
+    <div class="container py-5">
+      <!-- Progreso -->
+      <ul class="nav nav-tabs mb-4" id="progresoTabs">
+        <li class="nav-item">
+          <button class="nav-link active tabsCarrito" onclick="mostrarPaso(1)">1. Carrito de compras</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link tabsCarrito" onclick="mostrarPaso(2)">2. Detalles de envío</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link tabsCarrito" onclick="mostrarPaso(3)">3. Opciones de pago</button>
+        </li>
+      </ul>
+
+      <!-- Paso 1: Carrito -->
+      <div id="paso1" class="paso">
+        <div class="row">
+          <!-- Lista de productos -->
+          <div class="col-md-8">
+            <h4>Carrito de compras</h4>
+
+            <!-- CONTENEDOR CON SCROLL -->
+            <div class="carrito-scroll">
+
+
+              <!-- Producto -->
+              <div class="d-flex mb-3 border-bottom pb-2 align-items-start">
+                <img src="https://arete.com.py/userfiles/images/productos/224/90411.jpg" class="me-3" alt="Producto"
+                  style="width: 80px; height: auto;">
+
+                <div class="flex-grow-1">
+                  <strong>LOCOTE ROJO BRASIL X KG.</strong>
+                  <p class="mb-1 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <span>3.000 Gs</span>
+                </div>
+
+                <!-- Contador + Eliminar -->
+                <div class="ms-3" style="min-width: 250px;">
+                  <!-- Contador de unidades -->
+                  <div class="input-group mb-2" style="max-width: 250px;">
+                    <button class="btn btn-warning" type="button" onclick="decrementarCantidad()">
+                      <i class="bi bi-dash-lg"></i>
+                    </button>
+                    <input id="inputCantidad2" type="text" class="form-control text-center" value="0.100" readonly>
+                    <input type="text" class="form-control text-center bg-light" value="Kg" disabled>
+                    <button class="btn btn-warning" type="button" onclick="incrementarCantidad()">
+                      <i class="bi bi-plus-lg"></i>
+                    </button>
+                  </div>
+
+                  <!-- Botón Eliminar debajo -->
+                  <div class="text-end">
+                    <button class="btn btn-sm btn-danger" onclick="eliminarProducto(this)">
+                      <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Producto -->
+              <div class="d-flex mb-3 border-bottom pb-2 align-items-start">
+                <img src="https://arete.com.py/userfiles/images/productos/224/90411.jpg" class="me-3" alt="Producto"
+                  style="width: 80px; height: auto;">
+
+                <div class="flex-grow-1">
+                  <strong>LOCOTE ROJO BRASIL X KG.</strong>
+                  <p class="mb-1 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <span>3.000 Gs</span>
+                </div>
+
+                <!-- Contador + Eliminar -->
+                <div class="ms-3" style="min-width: 250px;">
+                  <!-- Contador de unidades -->
+                  <div class="input-group mb-2" style="max-width: 250px;">
+                    <button class="btn btn-warning" type="button" onclick="decrementarCantidad()">
+                      <i class="bi bi-dash-lg"></i>
+                    </button>
+                    <input id="inputCantidad2" type="text" class="form-control text-center" value="0.100" readonly>
+                    <input type="text" class="form-control text-center bg-light" value="Kg" disabled>
+                    <button class="btn btn-warning" type="button" onclick="incrementarCantidad()">
+                      <i class="bi bi-plus-lg"></i>
+                    </button>
+                  </div>
+
+                  <!-- Botón Eliminar debajo -->
+                  <div class="text-end">
+                    <button class="btn btn-sm btn-danger" onclick="eliminarProducto(this)">
+                      <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Producto -->
+              <div class="d-flex mb-3 border-bottom pb-2 align-items-start">
+                <img src="https://arete.com.py/userfiles/images/productos/224/90411.jpg" class="me-3" alt="Producto"
+                  style="width: 80px; height: auto;">
+
+                <div class="flex-grow-1">
+                  <strong>LOCOTE ROJO BRASIL X KG.</strong>
+                  <p class="mb-1 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <span>3.000 Gs</span>
+                </div>
+
+                <!-- Contador + Eliminar -->
+                <div class="ms-3" style="min-width: 250px;">
+                  <!-- Contador de unidades -->
+                  <div class="input-group mb-2" style="max-width: 250px;">
+                    <button class="btn btn-warning" type="button" onclick="decrementarCantidad()">
+                      <i class="bi bi-dash-lg"></i>
+                    </button>
+                    <input id="inputCantidad2" type="text" class="form-control text-center" value="0.100" readonly>
+                    <input type="text" class="form-control text-center bg-light" value="Kg" disabled>
+                    <button class="btn btn-warning" type="button" onclick="incrementarCantidad()">
+                      <i class="bi bi-plus-lg"></i>
+                    </button>
+                  </div>
+
+                  <!-- Botón Eliminar debajo -->
+                  <div class="text-end">
+                    <button class="btn btn-sm btn-danger" onclick="eliminarProducto(this)">
+                      <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Producto -->
+              <div class="d-flex mb-3 border-bottom pb-2 align-items-start">
+                <img src="https://arete.com.py/userfiles/images/productos/224/90411.jpg" class="me-3" alt="Producto"
+                  style="width: 80px; height: auto;">
+
+                <div class="flex-grow-1">
+                  <strong>LOCOTE ROJO BRASIL X KG.</strong>
+                  <p class="mb-1 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <span>3.000 Gs</span>
+                </div>
+
+                <!-- Contador + Eliminar -->
+                <div class="ms-3" style="min-width: 250px;">
+                  <!-- Contador de unidades -->
+                  <div class="input-group mb-2" style="max-width: 250px;">
+                    <button class="btn btn-warning" type="button" onclick="decrementarCantidad()">
+                      <i class="bi bi-dash-lg"></i>
+                    </button>
+                    <input id="inputCantidad2" type="text" class="form-control text-center" value="0.100" readonly>
+                    <input type="text" class="form-control text-center bg-light" value="Kg" disabled>
+                    <button class="btn btn-warning" type="button" onclick="incrementarCantidad()">
+                      <i class="bi bi-plus-lg"></i>
+                    </button>
+                  </div>
+
+                  <!-- Botón Eliminar debajo -->
+                  <div class="text-end">
+                    <button class="btn btn-sm btn-danger" onclick="eliminarProducto(this)">
+                      <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Agregá más productos aquí si querés -->
+            </div>
+
+
+
+            <div class="mt-4">
+              <button class="btn btn-dark" onclick="mostrarPaso(2)">Siguiente</button>
+              <button class="btn btn-secondary">Cancelar</button>
+            </div>
+          </div>
+
+          <!-- Resumen -->
+          <div class="col-md-4">
+            <h5>Resumen</h5>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between"><span>SUBTOTAL</span><strong>5.000 Gs</strong></li>
+              <li class="d-flex justify-content-between"><span>ENVÍO</span><strong>FREE</strong></li>
+              <li class="d-flex justify-content-between"><span>IVA</span><strong>500 Gs</strong></li>
+              <hr>
+              <li class="d-flex justify-content-between" style="font-size: 26px;"><strong>TOTAL</strong><strong>5.500 Gs</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paso 2: Detalles de envío -->
+      <div id="paso2" class="paso d-none">
+        <h4>Detalles de envío</h4>
+        <form class="mt-4">
+          <div class="mb-3">
+            <label class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" placeholder="Ej: Juan Pérez">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Dirección</label>
+            <input type="text" class="form-control" placeholder="Ej: Calle Falsa 123">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Ciudad</label>
+            <input type="text" class="form-control" placeholder="Ej: Asunción">
+          </div>
+          <div class="mt-4">
+            <button class="btn btn-secondary" type="button" onclick="mostrarPaso(1)">Atrás</button>
+            <button class="btn btn-dark" type="button" onclick="mostrarPaso(3)">Siguiente</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Paso 3: Opciones de pago -->
+      <div id="paso3" class="paso d-none">
+        <h4>Opciones de pago</h4>
+        <form class="mt-4">
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="pago" id="efectivo" checked>
+            <label class="form-check-label" for="efectivo">Pago en efectivo contra entrega</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="pago" id="tarjeta">
+            <label class="form-check-label" for="tarjeta">Tarjeta de crédito/débito</label>
+          </div>
+
+          <div class="mt-4">
+            <button class="btn btn-secondary" type="button" onclick="mostrarPaso(2)">Atrás</button>
+            <button class="btn btn-success" type="submit">Confirmar pedido</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function mostrarPaso(n) {
+        // Oculta todos
+        document.querySelectorAll('.paso').forEach(p => p.classList.add('d-none'));
+        document.querySelectorAll('#progresoTabs .nav-link').forEach(p => p.classList.remove('active'));
+        // Muestra el actual
+        document.getElementById('paso' + n).classList.remove('d-none');
+        document.querySelectorAll('#progresoTabs .nav-link')[n - 1].classList.add('active');
+      }
+    </script>
+  </main>
+
+
+
+
+ <%- include('../partials/footer') %>
