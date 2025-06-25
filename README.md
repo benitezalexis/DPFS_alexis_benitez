@@ -1,7 +1,7 @@
 # 🛒 E-commerce TuSuperAC
 
 ## 🧠 Temática del Marketplace
-El sitio será un e-commerce de supermercado. El nombre del e-commerce se llamara **TuSuper** .El mismo Ofrecerá productos frescos, alimentos no perecederos, bebidas, productos de limpieza y artículos para el hogar.
+El sitio será un e-commerce de supermercado. El nombre del e-commerce se llamara **TuSuperAC** .El mismo Ofrecerá productos frescos, alimentos no perecederos, bebidas, productos de limpieza y artículos para el hogar.
 
 El enfoque estará en brindar:
 - Una experiencia rápida y fácil para hacer compras semanales.
@@ -13,6 +13,9 @@ Está dirigido principalmente a:
 - Familias que hacen compras mensuales o semanales.
 - Personas mayores que prefieren evitar filas.
 - Jóvenes ocupados que valoran el tiempo y prefieren comprar online.
+
+## 📅 tablero de trabajo
+https://trello.com/invite/b/685379b0dd232872a951c35e/ATTI681d0622ae6ad8aeea5273be80649c3d8F57F118/fullstack-digital-house-ecommercer-tusuper
 
 ## 👨‍💻 Sobre mí
 Soy Alexis Benitez, estudiante de desarrollo Full Stack. Me apasiona crear soluciones digitales que mejoren la vida de las personas. En este proyecto busco aplicar mis conocimientos de React y Node.js para resolver una necesidad real.
