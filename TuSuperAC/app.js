@@ -10,8 +10,10 @@ let categoryRouter = require('./routes/category');
 let aboutRouter = require('./routes/about');
 let productDetailRouter = require('./routes/ProductDetail');
 let productCartRouter = require('./routes/productCart');
-let loginRouter = require('./routes/login');
+let loginClientRouter = require('./routes/loginClient');
+let loginAdminRouter = require('./routes/loginAdmin');
 let registerRouter = require('./routes/register');
+let logoutRouter = require('./routes/logout');
 var app = express();
 
 
@@ -21,22 +23,29 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+//app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true })); // Para manejar formularios con datos codificados en URL
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
-  secret:'dhmoviews',
-  resave:false,
-  saveUninitialized:true,
+  secret: 'loginecommercer', // cambiá por una clave segura
+  resave: false,
+  saveUninitialized: false
 }));
 
-// Middleware para guardar la última película visitada en la sesión
+
+/*// Middleware para guardar la última película visitada en la sesión
 app.use(function(req, res,next){
   console.log(req.cookies.lastMovie);
   if(req.session.lastMovie!== undefined){
     res.locals.lastMovie=req.session.lastMovie;
   }
   return next();
+});*/// Middleware para exponer sesiones a las vistas
+app.use((req, res, next) => {
+  res.locals.usuario = req.session.usuario || null; // para clientes (loginClient)
+  res.locals.admin = req.session.admin || null;     // para administrativos (loginAdmin)
+  next();
 });
 
 
@@ -46,8 +55,11 @@ app.use('/category', categoryRouter);
 app.use('/about', aboutRouter);
 app.use('/productDetail', productDetailRouter);
 app.use('/productCart', productCartRouter);
-app.use('/loginClient', loginRouter);
+app.use('/loginClient', loginClientRouter);
+app.use('/loginAdmin', loginAdminRouter);
 app.use('/registerClient', registerRouter);
+app.use('/logout', logoutRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

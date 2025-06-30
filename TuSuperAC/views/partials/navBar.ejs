@@ -1,55 +1,72 @@
-  <!-- Navbar completa -->
-  <nav class="navbar navbar-expand-lg bg-white border-bottom py-3 fixed-top shadow-sm" style="z-index: 1050;">
+<!-- Navbar completa -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom py-3 fixed-top shadow-sm" style="z-index: 1050;">
 
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <span>Tu</span><span class="text-warning">Super</span><span>AC</span>
-      </a>
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <span>Tu</span><span class="text-warning">Super</span><span>AC</span>
+    </a>
 
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- Contenido del navbar -->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <div class="d-lg-flex align-items-center justify-content-between w-100">
+    <!-- Contenido del navbar -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="d-lg-flex align-items-center justify-content-between w-100">
 
-          <!-- Buscador -->
-          <form class="d-flex my-3 my-lg-0 mx-lg-3 search-input" role="search">
-            <div class="input-group">
-              <input class="form-control border-start-0" type="search" placeholder="Buscar productos..."
-                aria-label="Buscar">
-              <button class="btn btn-warning" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </div>
-          </form>
-
-
-          <!-- Menú -->
-     <ul class="navbar-nav mx-lg-3 text-center text-lg-start">
-            <li class="nav-item"><a class="nav-link px-2" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-2" href="/category">Categorias</a></li>
-            <li class="nav-item"><a class="nav-link px-2" href="/about">Sobre Nosotros</a></li>
-          </ul>
-
-
-          <!-- Icono de usuario y enlace a Login -->
-          <div class="text-center mt-3">
-            <i class="bi bi-person-circle" style="color: black;font-size: 28px;"></i><br>
-     <a href="/loginClient" class="text-decoration-none" style="text-decoration: none;color:  var(--azul-marino);">Login</a>
+        <!-- Buscador -->
+        <form class="d-flex my-3 my-lg-0 mx-lg-3 search-input" role="search">
+          <div class="input-group">
+            <input class="form-control border-start-0" type="search" placeholder="Buscar productos..."
+              aria-label="Buscar">
+            <button class="btn btn-warning" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
           </div>
-          <!-- Carrito -->
-          <div class="text-center text-lg-end mt-3 mt-lg-0 position-relative">
-            <a href="/productCart" class="btn btn-dark position-relative">
-              <i class="bi bi-cart me-2"></i><span id="tuCarrito"> Tu carrito</span>
-              <span class="badge bg-danger rounded-pill position-absolute cart-badge">3</span>
+        </form>
+
+
+        <!-- Menú -->
+        <ul class="navbar-nav mx-lg-3 text-center text-lg-start">
+          <li class="nav-item"><a class="nav-link px-2" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="/category">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="/about">Sobre Nosotros</a></li>
+        </ul>
+
+
+        <!-- Icono de usuario y enlace a Login -->
+        <div class="text-center mt-3 dropdown">
+          <i class="bi bi-person-circle" style="color: black;font-size: 28px;"></i><br>
+
+          <% if (usuario) { %>
+            <a class="dropdown-toggle text-decoration-none" href="#" role="button" id="menuUsuario"
+              data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--azul-marino);">
+              <%= usuario.nombre %>
             </a>
-          </div>
-
+            <ul class="dropdown-menu" aria-labelledby="menuUsuario">
+              <li><a class="dropdown-item" href="/perfil">Mi perfil</a></li>
+              <li><a class="dropdown-item" href="/pedidos">Mis pedidos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/logout">Salir</a></li>
+            </ul>
+            <% } else { %>
+              <a href="/loginClient" class="text-decoration-none" style="color: var(--azul-marino);">Login</a>
+              <% } %>
         </div>
+
+        <!-- Carrito -->
+        <div class="text-center text-lg-end mt-3 mt-lg-0 position-relative">
+          <a href="/productCart" class="btn btn-dark position-relative">
+            <i class="bi bi-cart me-2"></i><span id="tuCarrito"> Tu carrito</span>
+            <span class="badge bg-danger rounded-pill position-absolute cart-badge">3</span>
+          </a>
+        </div>
+
       </div>
     </div>
-  </nav>
+  </div>
+</nav>

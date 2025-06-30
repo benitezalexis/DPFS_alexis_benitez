@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "nombre": "Admin Root",
+    "correo": "admin@example.com",
+    "cedula": "7854213",
+    "password": "admin123",
+    "tipo": "admin",
+    "fecha_creacion": "2025-06-25 21:10:00",
+    "fecha_modificacion": "2025-06-25 21:10:00"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos User",
+    "correo": "carlos@example.com",
+    "cedula": "4921786",
+    "password": "user123",
+    "tipo": "standart",
+    "fecha_creacion": "2025-06-25 21:11:00",
+    "fecha_modificacion": "2025-06-25 21:11:00"
+  },
+  {
+    "id": 3,
+    "nombre": "Lucía Ramírez",
+    "correo": "lucia@example.com",
+    "cedula": "8532147",
+    "password": "lucia2025",
+    "tipo": "standart",
+    "fecha_creacion": "2025-06-25 21:12:00",
+    "fecha_modificacion": "2025-06-25 21:12:00"
+  },
+  {
+    "id": 4,
+    "nombre": "José Torres",
+    "correo": "jose@example.com",
+    "cedula": "3249851",
+    "password": "josepass",
+    "tipo": "standart",
+    "fecha_creacion": "2025-06-25 21:13:00",
+    "fecha_modificacion": "2025-06-25 21:13:00"
+  },
+  {
+    "id": 5,
+    "nombre": "Ana González",
+    "correo": "ana@example.com",
+    "cedula": "6578390",
+    "password": "anasecreta",
+    "tipo": "standart",
+    "fecha_creacion": "2025-06-25 21:14:00",
+    "fecha_modificacion": "2025-06-25 21:14:00"
+  },
+  {
+    "id": 6,
+    "nombre": "Miguel Duarte",
+    "correo": "miguel@example.com",
+    "cedula": "1873429",
+    "password": "miguel123",
+    "tipo": "admin",
+    "fecha_creacion": "2025-06-25 21:15:00",
+    "fecha_modificacion": "2025-06-25 21:15:00"
+  },
+  {
+    "id": 7,
+    "nombre": "Paola Villalba",
+    "correo": "paola@example.com",
+    "cedula": "9034715",
+    "password": "paopass",
+    "tipo": "standart",
+    "fecha_creacion": "2025-06-25 21:16:00",
+    "fecha_modificacion": "2025-06-25 21:16:00"
+  },
+  {
+    "id": 8,
+    "nombre": "David Fernández",
+    "correo": "david@example.com",
+    "cedula": "7612940",
+    "password": "davidpass",
+    "tipo": "standart",
+    "fecha_creacion": "2025-06-25 21:17:00",
+    "fecha_modificacion": "2025-06-25 21:17:00"
+  },
+  {
+    "id": 9,
+    "nombre": "Marta López",
+    "correo": "marta@example.com",
+    "cedula": "2748396",
+    "password": "martita",
+    "tipo": "standart",
+    "fecha_creacion": "2025-06-25 21:18:00",
+    "fecha_modificacion": "2025-06-25 21:18:00"
+  },
+  {
+    "id": 10,
+    "nombre": "Pedro Acuña",
+    "correo": "pedro@example.com",
+    "cedula": "6958472",
+    "password": "pedrito",
+    "tipo": "standart",
+    "fecha_creacion": "2025-06-25 21:19:00",
+    "fecha_modificacion": "2025-06-25 21:19:00"
+  }
+]
