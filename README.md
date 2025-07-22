@@ -15,7 +15,7 @@ Está dirigido principalmente a:
 - Jóvenes ocupados que valoran el tiempo y prefieren comprar online.
 
 ## 📅 tablero de trabajo
-https://trello.com/invite/b/685379b0dd232872a951c35e/ATTI681d0622ae6ad8aeea5273be80649c3d8F57F118/fullstack-digital-house-ecommercer-tusuper
+https://trello.com/b/zQzPhYYc/fullstack-digital-house-ecommercer-tusuper
 
 ## 👨‍💻 Sobre mí
 Soy Alexis Benitez, estudiante de desarrollo Full Stack. Me apasiona crear soluciones digitales que mejoren la vida de las personas. En este proyecto busco aplicar mis conocimientos de React y Node.js para resolver una necesidad real.
