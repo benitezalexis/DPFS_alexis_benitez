@@ -4,7 +4,7 @@
     "nombre": "Admin Root",
     "correo": "admin@example.com",
     "cedula": "7854213",
-    "password": "admin123",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
     "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:10:00",
     "fecha_modificacion": "2025-06-25 21:10:00"
@@ -14,8 +14,8 @@
     "nombre": "Carlos User",
     "correo": "carlos@example.com",
     "cedula": "4921786",
-    "password": "user123",
-    "tipo": "standart",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:11:00",
     "fecha_modificacion": "2025-06-25 21:11:00"
   },
@@ -24,8 +24,8 @@
     "nombre": "Lucía Ramírez",
     "correo": "lucia@example.com",
     "cedula": "8532147",
-    "password": "lucia2025",
-    "tipo": "standart",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:12:00",
     "fecha_modificacion": "2025-06-25 21:12:00"
   },
@@ -34,8 +34,8 @@
     "nombre": "José Torres",
     "correo": "jose@example.com",
     "cedula": "3249851",
-    "password": "josepass",
-    "tipo": "standart",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:13:00",
     "fecha_modificacion": "2025-06-25 21:13:00"
   },
@@ -44,8 +44,8 @@
     "nombre": "Ana González",
     "correo": "ana@example.com",
     "cedula": "6578390",
-    "password": "anasecreta",
-    "tipo": "standart",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:14:00",
     "fecha_modificacion": "2025-06-25 21:14:00"
   },
@@ -54,7 +54,7 @@
     "nombre": "Miguel Duarte",
     "correo": "miguel@example.com",
     "cedula": "1873429",
-    "password": "miguel123",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
     "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:15:00",
     "fecha_modificacion": "2025-06-25 21:15:00"
@@ -64,8 +64,8 @@
     "nombre": "Paola Villalba",
     "correo": "paola@example.com",
     "cedula": "9034715",
-    "password": "paopass",
-    "tipo": "standart",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:16:00",
     "fecha_modificacion": "2025-06-25 21:16:00"
   },
@@ -74,8 +74,8 @@
     "nombre": "David Fernández",
     "correo": "david@example.com",
     "cedula": "7612940",
-    "password": "davidpass",
-    "tipo": "standart",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:17:00",
     "fecha_modificacion": "2025-06-25 21:17:00"
   },
@@ -84,8 +84,8 @@
     "nombre": "Marta López",
     "correo": "marta@example.com",
     "cedula": "2748396",
-    "password": "martita",
-    "tipo": "standart",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:18:00",
     "fecha_modificacion": "2025-06-25 21:18:00"
   },
@@ -94,8 +94,8 @@
     "nombre": "Pedro Acuña",
     "correo": "pedro@example.com",
     "cedula": "6958472",
-    "password": "pedrito",
-    "tipo": "standart",
+    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "tipo": "admin",
     "fecha_creacion": "2025-06-25 21:19:00",
     "fecha_modificacion": "2025-06-25 21:19:00"
   }

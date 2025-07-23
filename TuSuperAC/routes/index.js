@@ -1,9 +1,17 @@
 var express = require('express');
 var router = express.Router();
+const { generarCatalogoCompleto, obtenerProductosPorSubcategoria } = require('../utils/utils');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
-});
+const productosPromos = obtenerProductosPorSubcategoria(40); // Cambia el ID según la subcategoría deseada
+const productosDestacados = obtenerProductosPorSubcategoria(39); // Cambia el ID según la subcategoría deseada
+
+
+  res.render('index', {
+    title: 'Tu Super Online',
+    productosPromos,
+    productosDestacados
+  });});
 
 module.exports = router;

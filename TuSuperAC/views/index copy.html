@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de SubSecciones y Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .accordion-button {
+      background-color: #001F3F;
+      color: white;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #FFD700;
+      color: #001F3F;
+    }
+    .accordion-body {
+      background-color: #001F3F;
+      color: white;
+    }
+    .btn-custom {
+      background-color: #FFD700;
+      color: #001F3F;
+      border: none;
+    }
+    table input {
+      background: transparent;
+      border: none;
+      color: white;
+    }
+    table input:disabled {
+      color: #adb5bd;
+    }
+    hr {
+      border-top: 1px solid #FFD700;
+    }
+  </style>
+</head>
+<body>
+<div class="container py-4">
+  <div class="accordion" id="accordionGeneral">
+  <div class="accordion" id="accordionSecciones">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSecciones">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecciones" aria-expanded="true" aria-controls="collapseSecciones">
+          Secciones
+        </button>
+      </h2>
+      <div id="collapseSecciones" class="accordion-collapse collapse show" aria-labelledby="headingSecciones">
+        <div class="accordion-body">
+
+          <!-- Buscador -->
+          <div class="row mb-3">
+            <div class="col-md-9">
+              <input type="text" id="busquedaSeccion" class="form-control" placeholder="Buscar por ID o descripción...">
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-custom w-100" onclick="buscarSecciones()">Buscar</button>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Tabla -->
+          <div class="table-responsive">
+            <table class="table table-bordered table-dark align-middle">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Descripción</th>
+                  <th>Opciones</th>
+                </tr>
+              </thead>
+              <tbody id="tablaSecciones">
+                <!-- Filas cargadas dinámicamente -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Botones inferiores -->
+          <div class="d-flex justify-content-end mt-3">
+            <button class="btn btn-custom me-2" onclick="crearSeccion()">Crear</button>
+            <button class="btn btn-custom" onclick="guardarSecciones()">Guardar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- SUBSECCIONES -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSubsecciones">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubsecciones" aria-expanded="true" aria-controls="collapseSubsecciones">
+          Subsecciones
+        </button>
+      </h2>
+      <div id="collapseSubsecciones" class="accordion-collapse collapse show" aria-labelledby="headingSubsecciones">
+        <div class="accordion-body">
+
+          <div class="row mb-3">
+            <div class="col-md-9">
+              <input type="text" id="busquedaSubseccion" class="form-control" placeholder="Buscar por ID o descripción...">
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-custom w-100" onclick="buscarSubsecciones()">Buscar</button>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-dark align-middle">
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>Sección</th>
+                <th>Descripción</th>
+                <th>Visible</th>
+                <th>Opciones</th>
+              </tr>
+              </thead>
+              <tbody id="tablaSubsecciones"></tbody>
+            </table>
+          </div>
+
+          <div class="d-flex justify-content-end mt-3">
+            <button class="btn btn-custom me-2" onclick="crearSubseccion()">Crear</button>
+            <button class="btn btn-custom" onclick="guardarSubsecciones()">Guardar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingProductos">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProductos" aria-expanded="false" aria-controls="collapseProductos">
+          Productos
+        </button>
+      </h2>
+      <div id="collapseProductos" class="accordion-collapse collapse" aria-labelledby="headingProductos">
+        <div class="accordion-body">
+
+          <div class="row mb-3">
+            <div class="col-md-9">
+              <input type="text" id="busquedaProducto" class="form-control" placeholder="Buscar por código o descripción...">
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-custom w-100" onclick="buscarProductos()">Buscar</button>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-dark align-middle">
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>Código</th>
+                <th>Sección</th>
+                <th>Subsección</th>
+                <th>Descripción</th>
+                <th>Tipo</th>
+                <th>Precio</th>
+                <th>Visible</th>
+                <th>Opciones</th>
+              </tr>
+              </thead>
+              <tbody id="tablaProductos"></tbody>
+            </table>
+          </div>
+
+          <div class="d-flex justify-content-end mt-3">
+            <button class="btn btn-custom me-2" onclick="crearProducto()">Crear</button>
+            <button class="btn btn-custom" onclick="guardarProductos()">Guardar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+      const seccionesData = [
+    { id: '1', descripcion: 'Almacén' },
+    { id: '2', descripcion: 'Electrónica' },
+    { id: '3', descripcion: 'Ferretería' }
+  ];
+  const subsecciones = [
+    { id: '1', seccion: 'A', descripcion: 'Sub A', visible: true },
+    { id: '2', seccion: 'B', descripcion: 'Sub B', visible: false }
+  ];
+  const productos = [
+    { id: '1', codigo: '001', seccion: '1', subseccion: '1', descripcion: 'Prod 1', tipo: 'kilo', precio: '5000', visible: true },
+    { id: '2', codigo: '002', seccion: '2', subseccion: '2', descripcion: 'Prod 2', tipo: 'unidad', precio: '7000', visible: false }
+  ];
+
+  function renderTablaSubsecciones() {
+    const tbody = document.getElementById("tablaSubsecciones");
+    tbody.innerHTML = "";
+    subsecciones.forEach(sub => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td><input type="text" class="form-control" value="${sub.id}" disabled></td>
+        <td>
+        <input list="listaSeccionesSec" class="form-control seccion-input" value="${sub.seccion}" disabled>
+        <datalist id="listaSeccionesSec">
+          ${seccionesData.map(sec => `<option  value="${sec.id}) ${sec.descripcion}">`).join("")}
+        </datalist>
+      </td>
+        <td><input type="text" class="form-control" value="${sub.descripcion}" disabled></td>
+        <td><input type="checkbox" class="form-check-input" ${sub.visible ? 'checked' : ''} disabled></td>
+        <td>
+          <button class="btn btn-sm btn-warning me-1" onclick="editarFila(this)">Editar</button>
+          <button class="btn btn-sm btn-danger" onclick="eliminarFila(this)">Eliminar</button>
+        </td>`;
+      tbody.appendChild(row);
+    });
+  }
+
+  function renderTablaProductos() {
+    const tbody = document.getElementById("tablaProductos");
+    tbody.innerHTML = "";
+    productos.forEach(prod => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td><input type="text" class="form-control" value="${prod.id}" disabled></td>
+        <td><input type="text" class="form-control" value="${prod.codigo}" disabled></td>
+       <td>
+        <input list="listaSecciones" class="form-control seccion-input" value="${prod.seccion}" disabled>
+        <datalist id="listaSecciones">
+          ${seccionesData.map(sec => `<option  value="${sec.id}) ${sec.descripcion}">`).join("")}
+        </datalist>
+      </td>
+       <td>
+        <input list="listaSubSecciones" class="form-control seccion-input" value="${prod.seccion}" disabled>
+        <datalist id="listaSubSecciones">
+          ${subsecciones.map(sec => `<option  value="${sec.id}) ${sec.descripcion}">`).join("")}
+        </datalist>
+      </td>
+        <td><input type="text" class="form-control" value="${prod.descripcion}" disabled></td>
+        <td><input type="text" class="form-control" value="${prod.tipo}" disabled></td>
+        <td><input type="text" class="form-control" value="${prod.precio}" disabled></td>
+        <td><input type="checkbox" class="form-check-input" ${prod.visible ? 'checked' : ''} disabled></td>
+        <td>
+          <button class="btn btn-sm btn-warning me-1" onclick="editarFila(this)">Editar</button>
+          <button class="btn btn-sm btn-danger" onclick="eliminarFila(this)">Eliminar</button>
+        </td>`;
+      tbody.appendChild(row);
+    });
+  }
+
+  function editarFila(btn) {
+    const row = btn.closest("tr");
+    const inputs = row.querySelectorAll("input");
+    inputs.forEach((input, i) => {
+      if (input.type === "checkbox" || i > 0) input.disabled = false;
+    });
+  }
+
+  function eliminarFila(btn) {
+    const row = btn.closest("tr");
+    row.remove();
+  }
+
+  function crearSeccion() {
+    const tbody = document.getElementById("tablaSecciones");
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td><input type="text" class="form-control" value=""></td>
+      <td><input type="text" class="form-control" value=""></td>
+      <td>
+        <button class="btn btn-sm btn-warning me-1" onclick="editarFila(this)">Editar</button>
+        <button class="btn btn-sm btn-danger" onclick="eliminarFila(this)">Eliminar</button>
+      </td>
+    `;
+    tbody.appendChild(row);
+  }
+  
+  function buscarSecciones() {
+    const query = document.getElementById("busquedaSeccion").value.toLowerCase();
+    const filtradas = seccionesData.filter(s =>
+      s.id.includes(query) || s.descripcion.toLowerCase().includes(query)
+    );
+    renderTablaSecciones(filtradas);
+  }
+
+  function editarFila(btn) {
+    const row = btn.closest("tr");
+    const inputs = row.querySelectorAll("input");
+    inputs.forEach((input, i) => {
+      if (i > 0) input.disabled = false; // solo habilita descripción
+    });
+  }
+  function renderTablaSecciones(data) {
+    const tbody = document.getElementById("tablaSecciones");
+    tbody.innerHTML = "";
+    data.forEach((item, index) => {
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td><input type="text" class="form-control" value="${item.id}" disabled></td>
+        <td><input type="text" class="form-control" value="${item.descripcion}" disabled></td>
+        <td>
+          <button class="btn btn-sm btn-warning me-1" onclick="editarFila(this)">Editar</button>
+          <button class="btn btn-sm btn-danger" onclick="eliminarFila(this)">Eliminar</button>
+        </td>
+      `;
+      tbody.appendChild(row);
+    });
+  }
+  function eliminarFila(btn) {
+    const row = btn.closest("tr");
+    row.remove();
+  }
+
+  function crearSubseccion() {
+    const tbody = document.getElementById("tablaSubsecciones");
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td><input type="text" class="form-control"></td>
+      <td><input type="text" class="form-control"></td>
+      <td><input type="text" class="form-control"></td>
+      <td><input type="checkbox" class="form-check-input"></td>
+      <td>
+        <button class="btn btn-sm btn-warning me-1" onclick="editarFila(this)">Editar</button>
+        <button class="btn btn-sm btn-danger" onclick="eliminarFila(this)">Eliminar</button>
+      </td>`;
+    tbody.appendChild(row);
+  }
+
+  function crearProducto() {
+    const tbody = document.getElementById("tablaProductos");
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td><input type="text" class="form-control"></td>
+      <td><input type="text" class="form-control"></td>
+      <td><input type="text" class="form-control"></td>
+      <td><input type="text" class="form-control"></td>
+      <td><input type="text" class="form-control"></td>
+      <td><input type="text" class="form-control"></td>
+      <td><input type="text" class="form-control"></td>
+      <td><input type="checkbox" class="form-check-input"></td>
+      <td>
+        <button class="btn btn-sm btn-warning me-1" onclick="editarFila(this)">Editar</button>
+        <button class="btn btn-sm btn-danger" onclick="eliminarFila(this)">Eliminar</button>
+      </td>`;
+    tbody.appendChild(row);
+  }
+  
+  function guardarSecciones() {
+    const filas = document.querySelectorAll("#tablaSecciones tr");
+    const nuevasSecciones = [];
+    filas.forEach(row => {
+      const [idInput, descInput] = row.querySelectorAll("input");
+      const id = idInput.value.trim();
+      const desc = descInput.value.trim();
+      if (id && desc) {
+        nuevasSecciones.push({ id, descripcion: desc });
+      }
+    });
+    console.log("Secciones guardadas:", nuevasSecciones);
+    alert("Secciones guardadas (ver consola)");
+    // Aquí puedes enviar a tu backend o guardar en localStorage
+  }
+
+  function guardarSubsecciones() {
+    alert("Subsecciones guardadas");
+  }
+
+  function guardarProductos() {
+    alert("Productos guardados");
+  }
+
+  function buscarSubsecciones() {
+    alert("Búsqueda subsecciones");
+  }
+
+  function buscarProductos() {
+    alert("Búsqueda productos");
+  }
+
+  renderTablaSubsecciones();
+  renderTablaProductos();
+  renderTablaSecciones(seccionesData);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

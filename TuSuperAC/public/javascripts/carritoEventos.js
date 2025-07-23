@@ -114,7 +114,8 @@ if (e.target.closest('.eliminarItemCompleto')) {
   if (estadoItem === 'ult') {
     itemCard.remove();
   } 
-  renderizarCarrito()
+  renderizarCarrito();
+  actualizarCarritoVisual();
 }
 
 

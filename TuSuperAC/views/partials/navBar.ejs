@@ -53,6 +53,20 @@
               </li>
               <li><a class="dropdown-item" href="/logout">Salir</a></li>
             </ul>
+           <% } else if(admin){ %>
+               <a class="dropdown-toggle text-decoration-none" href="#" role="button" id="menuUsuario"
+              data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--azul-marino);">
+              <%= admin.nombre %>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuUsuario">
+              <li><a class="dropdown-item" href="/perfil">Mi perfil</a></li>
+              <li><a class="dropdown-item" href="/editProduct">Editar Productos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/logoutAdmin">Salir</a></li>
+            </ul>
+
             <% } else { %>
               <a href="/loginClient" class="text-decoration-none" style="color: var(--azul-marino);">Login</a>
               <% } %>

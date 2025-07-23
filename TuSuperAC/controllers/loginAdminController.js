@@ -7,6 +7,9 @@ const bcrypt = require('bcryptjs');
 const USUARIOS_PATH = path.join(__dirname, '../data/usuarios.json');
 
 let loginController = {
+  formLogin: function (req, res) {
+    res.render('users/loginAdmin', { error: null });
+  },
   index: function (req, res) {
    const { email, password } = req.body;
   const usuarios = JSON.parse(fs.readFileSync(USUARIOS_PATH));

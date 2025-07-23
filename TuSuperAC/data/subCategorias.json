@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "codCategoria": 1,
+    "descripcion": "ARROZ",
+    "visible": 1
+  },
+  {
+    "id": 2,
+    "codCategoria": 1,
+    "descripcion": "FIDEOS",
+    "visible": 1
+  },
+  {
+    "id": 3,
+    "codCategoria": 1,
+    "descripcion": "HARINA",
+    "visible": 1
+  },
+  {
+    "id": 4,
+    "codCategoria": 1,
+    "descripcion": "LEGUMBRE",
+    "visible": 1
+  },
+  {
+    "id": 5,
+    "codCategoria": 1,
+    "descripcion": "YERBA",
+    "visible": 1
+  },
+  {
+    "id": 6,
+    "codCategoria": 1,
+    "descripcion": "HUEVOS",
+    "visible": 1
+  },
+  {
+    "id": 7,
+    "codCategoria": 1,
+    "descripcion": "ACEITES",
+    "visible": 1
+  },
+  {
+    "id": 8,
+    "codCategoria": 2,
+    "descripcion": "TERMOS",
+    "visible": 1
+  },
+  {
+    "id": 9,
+    "codCategoria": 2,
+    "descripcion": "CUBIERTOS",
+    "visible": 1
+  },
+  {
+    "id": 10,
+    "codCategoria": 2,
+    "descripcion": "SARTENES",
+    "visible": 1
+  },
+  {
+    "id": 11,
+    "codCategoria": 2,
+    "descripcion": "ALUMINIO",
+    "visible": 1
+  },
+  {
+    "id": 12,
+    "codCategoria": 2,
+    "descripcion": "PLASTICOS",
+    "visible": 1
+  },
+  {
+    "id": 13,
+    "codCategoria": 2,
+    "descripcion": "COPAS Y VASOS",
+    "visible": 1
+  },
+  {
+    "id": 14,
+    "codCategoria": 2,
+    "descripcion": "OLLAS Y PAVAS",
+    "visible": 1
+  },
+  {
+    "id": 15,
+    "codCategoria": 2,
+    "descripcion": "TAZAS Y PLATOS",
+    "visible": 1
+  },
+  {
+    "id": 17,
+    "codCategoria": 2,
+    "descripcion": "NAVIDEÑOS",
+    "visible": 1
+  },
+  {
+    "id": 18,
+    "codCategoria": 3,
+    "descripcion": "CARNE DE AVE",
+    "visible": 1
+  },
+  {
+    "id": 19,
+    "codCategoria": 3,
+    "descripcion": "CARNE PORCINA",
+    "visible": 1
+  },
+  {
+    "id": 20,
+    "codCategoria": 3,
+    "descripcion": "CARNE VACUNA",
+    "visible": 1
+  },
+  {
+    "id": 21,
+    "codCategoria": 3,
+    "descripcion": "PERCADERIA",
+    "visible": 1
+  },
+  {
+    "id": 22,
+    "codCategoria": 4,
+    "descripcion": "CONFITERIA",
+    "visible": 1
+  },
+  {
+    "id": 23,
+    "codCategoria": 5,
+    "descripcion": "FRUTAS",
+    "visible": 1
+  },
+  {
+    "id": 24,
+    "codCategoria": 5,
+    "descripcion": "VERDURAS",
+    "visible": 1
+  },
+  {
+    "id": 25,
+    "codCategoria": 6,
+    "descripcion": "BEBIDA LACTEA",
+    "visible": 1
+  },
+  {
+    "id": 26,
+    "codCategoria": 6,
+    "descripcion": "CREMA DE LECHE",
+    "visible": 1
+  },
+  {
+    "id": 27,
+    "codCategoria": 6,
+    "descripcion": "LECHE ALTERNATIVA",
+    "visible": 1
+  },
+  {
+    "id": 28,
+    "codCategoria": 6,
+    "descripcion": "LECHE CONDENSADA",
+    "visible": 1
+  },
+  {
+    "id": 29,
+    "codCategoria": 6,
+    "descripcion": "LECHE SABORIZADA",
+    "visible": 1
+  },
+  {
+    "id": 30,
+    "codCategoria": 6,
+    "descripcion": "LECHES NATURALES",
+    "visible": 1
+  },
+  {
+    "id": 31,
+    "codCategoria": 6,
+    "descripcion": "POSTRES",
+    "visible": 1
+  },
+  {
+    "id": 32,
+    "codCategoria": 6,
+    "descripcion": "YOGURT",
+    "visible": 1
+  },
+  {
+    "id": 33,
+    "codCategoria": 7,
+    "descripcion": "PRODUCCION PROPIA",
+    "visible": 1
+  },
+  {
+    "id": 34,
+    "codCategoria": 7,
+    "descripcion": "PANIFICADOS TERCEROS",
+    "visible": 1
+  },
+  {
+    "id": 35,
+    "codCategoria": 8,
+    "descripcion": "ROTISERIA TERCERO",
+    "visible": 1
+  },
+  {
+    "id": 36,
+    "codCategoria": 8,
+    "descripcion": "ROTISERIA PROPIA",
+    "visible": 1
+  },
+  {
+    "id": 37,
+    "codCategoria": 9,
+    "descripcion": "PASTAS FRESCAS",
+    "visible": 1
+  },
+  {
+    "id": 38,
+    "codCategoria": 10,
+    "descripcion": "COTILLON",
+    "visible": 1
+  },
+  {
+    "id": 39,
+    "codCategoria": 11,
+    "descripcion": "PROMOCIONES",
+    "visible": 1
+  },
+  {
+    "id": 40,
+    "codCategoria": 12,
+    "descripcion": "BARNER",
+    "visible": 1
+  }
+]

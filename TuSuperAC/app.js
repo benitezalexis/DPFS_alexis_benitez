@@ -14,6 +14,10 @@ let loginClientRouter = require('./routes/loginClient');
 let loginAdminRouter = require('./routes/loginAdmin');
 let registerRouter = require('./routes/register');
 let logoutRouter = require('./routes/logout');
+let logoutAdmin = require('./routes/logoutAdmin');
+let productRouter = require('./routes/product');
+let subCategoryRouter = require('./routes/subCategory');
+
 var app = express();
 
 
@@ -51,7 +55,6 @@ app.use((req, res, next) => {
 
 
 app.use('/', indexRouter);
-app.use('/category', categoryRouter);
 app.use('/about', aboutRouter);
 app.use('/productDetail', productDetailRouter);
 app.use('/productCart', productCartRouter);
@@ -59,7 +62,10 @@ app.use('/loginClient', loginClientRouter);
 app.use('/loginAdmin', loginAdminRouter);
 app.use('/registerClient', registerRouter);
 app.use('/logout', logoutRouter);
-
+app.use('/logoutAdmin', logoutAdmin);
+app.use('/products', productRouter);
+app.use('/category', categoryRouter);
+app.use('/subCategory', subCategoryRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

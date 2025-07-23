@@ -1,0 +1,3218 @@
+[
+  {
+    "id": 1,
+    "precioCab": 1,
+    "codigo": "7840023000150",
+    "precio": 3650
+  },
+  {
+    "id": 2,
+    "precioCab": 1,
+    "codigo": "7840533000022",
+    "precio": 9700
+  },
+  {
+    "id": 3,
+    "precioCab": 1,
+    "codigo": "7840023000266",
+    "precio": 5900
+  },
+  {
+    "id": 4,
+    "precioCab": 1,
+    "codigo": "7840023000273",
+    "precio": 49550
+  },
+  {
+    "id": 5,
+    "precioCab": 1,
+    "codigo": "7840023000259",
+    "precio": 10550
+  },
+  {
+    "id": 6,
+    "precioCab": 1,
+    "codigo": "7840023000280",
+    "precio": 9150
+  },
+  {
+    "id": 7,
+    "precioCab": 1,
+    "codigo": "7840023000303",
+    "precio": 45050
+  },
+  {
+    "id": 8,
+    "precioCab": 1,
+    "codigo": "7840023000297",
+    "precio": 5450
+  },
+  {
+    "id": 9,
+    "precioCab": 1,
+    "codigo": "7841297000075",
+    "precio": 8850
+  },
+  {
+    "id": 10,
+    "precioCab": 1,
+    "codigo": "7896398900038",
+    "precio": 18300
+  },
+  {
+    "id": 11,
+    "precioCab": 1,
+    "codigo": "7896398901134",
+    "precio": 89500
+  },
+  {
+    "id": 12,
+    "precioCab": 1,
+    "codigo": "7730177003803",
+    "precio": 17300
+  },
+  {
+    "id": 13,
+    "precioCab": 1,
+    "codigo": "7840997000118",
+    "precio": 8250
+  },
+  {
+    "id": 14,
+    "precioCab": 1,
+    "codigo": "2200402",
+    "precio": 7100
+  },
+  {
+    "id": 15,
+    "precioCab": 1,
+    "codigo": "7840997000095",
+    "precio": 3850
+  },
+  {
+    "id": 16,
+    "precioCab": 1,
+    "codigo": "7840997000057",
+    "precio": 6900
+  },
+  {
+    "id": 17,
+    "precioCab": 1,
+    "codigo": "7841297000082",
+    "precio": 0
+  },
+  {
+    "id": 18,
+    "precioCab": 1,
+    "codigo": "7841297000129",
+    "precio": 0
+  },
+  {
+    "id": 19,
+    "precioCab": 1,
+    "codigo": "7840077000069",
+    "precio": 39200
+  },
+  {
+    "id": 20,
+    "precioCab": 1,
+    "codigo": "8004690053195",
+    "precio": 15500
+  },
+  {
+    "id": 21,
+    "precioCab": 1,
+    "codigo": "8004690052501",
+    "precio": 15500
+  },
+  {
+    "id": 22,
+    "precioCab": 1,
+    "codigo": "8004323110073",
+    "precio": 0
+  },
+  {
+    "id": 23,
+    "precioCab": 1,
+    "codigo": "8004323130378",
+    "precio": 18500
+  },
+  {
+    "id": 24,
+    "precioCab": 1,
+    "codigo": "7730114000780",
+    "precio": 30900
+  },
+  {
+    "id": 25,
+    "precioCab": 1,
+    "codigo": "7730114000797",
+    "precio": 30900
+  },
+  {
+    "id": 26,
+    "precioCab": 1,
+    "codigo": "7730114100077",
+    "precio": 30900
+  },
+  {
+    "id": 27,
+    "precioCab": 1,
+    "codigo": "7730114100084",
+    "precio": 30900
+  },
+  {
+    "id": 28,
+    "precioCab": 1,
+    "codigo": "7730114100015",
+    "precio": 30900
+  },
+  {
+    "id": 29,
+    "precioCab": 1,
+    "codigo": "7730114100046",
+    "precio": 30900
+  },
+  {
+    "id": 30,
+    "precioCab": 1,
+    "codigo": "8853602001379",
+    "precio": 14500
+  },
+  {
+    "id": 31,
+    "precioCab": 1,
+    "codigo": "8005121000115",
+    "precio": 17500
+  },
+  {
+    "id": 32,
+    "precioCab": 1,
+    "codigo": "8005121002850",
+    "precio": 26500
+  },
+  {
+    "id": 33,
+    "precioCab": 1,
+    "codigo": "8005121050851",
+    "precio": 30000
+  },
+  {
+    "id": 34,
+    "precioCab": 1,
+    "codigo": "8005121050400",
+    "precio": 30000
+  },
+  {
+    "id": 35,
+    "precioCab": 1,
+    "codigo": "8005121000146",
+    "precio": 17500
+  },
+  {
+    "id": 36,
+    "precioCab": 1,
+    "codigo": "8005121001006",
+    "precio": 26500
+  },
+  {
+    "id": 37,
+    "precioCab": 1,
+    "codigo": "8005121050271",
+    "precio": 30000
+  },
+  {
+    "id": 38,
+    "precioCab": 1,
+    "codigo": "7840045056210",
+    "precio": 9350
+  },
+  {
+    "id": 39,
+    "precioCab": 1,
+    "codigo": "90105",
+    "precio": 6850
+  },
+  {
+    "id": 40,
+    "precioCab": 1,
+    "codigo": "7840595000060",
+    "precio": 4700
+  },
+  {
+    "id": 41,
+    "precioCab": 1,
+    "codigo": "7840595000077",
+    "precio": 9150
+  },
+  {
+    "id": 42,
+    "precioCab": 1,
+    "codigo": "7840595000084",
+    "precio": 15200
+  },
+  {
+    "id": 43,
+    "precioCab": 1,
+    "codigo": "425692",
+    "precio": 12950
+  },
+  {
+    "id": 44,
+    "precioCab": 1,
+    "codigo": "7790580138738",
+    "precio": 10000
+  },
+  {
+    "id": 45,
+    "precioCab": 1,
+    "codigo": "036800838802",
+    "precio": 25500
+  },
+  {
+    "id": 46,
+    "precioCab": 1,
+    "codigo": "7840248990502",
+    "precio": 14400
+  },
+  {
+    "id": 47,
+    "precioCab": 1,
+    "codigo": "7842558000117",
+    "precio": 18150
+  },
+  {
+    "id": 48,
+    "precioCab": 1,
+    "codigo": "7842558000131",
+    "precio": 18150
+  },
+  {
+    "id": 49,
+    "precioCab": 1,
+    "codigo": "7842558000056",
+    "precio": 31600
+  },
+  {
+    "id": 50,
+    "precioCab": 1,
+    "codigo": "7841731000210",
+    "precio": 0
+  },
+  {
+    "id": 51,
+    "precioCab": 1,
+    "codigo": "9901312",
+    "precio": 3150
+  },
+  {
+    "id": 52,
+    "precioCab": 1,
+    "codigo": "9901313",
+    "precio": 5950
+  },
+  {
+    "id": 53,
+    "precioCab": 1,
+    "codigo": "9901314",
+    "precio": 12150
+  },
+  {
+    "id": 54,
+    "precioCab": 1,
+    "codigo": "087703136571",
+    "precio": 59750
+  },
+  {
+    "id": 55,
+    "precioCab": 1,
+    "codigo": "7840045018478",
+    "precio": 0
+  },
+  {
+    "id": 56,
+    "precioCab": 1,
+    "codigo": "7840045018485",
+    "precio": 9700
+  },
+  {
+    "id": 57,
+    "precioCab": 1,
+    "codigo": "7840595001418",
+    "precio": 4550
+  },
+  {
+    "id": 58,
+    "precioCab": 1,
+    "codigo": "7840595000121",
+    "precio": 11350
+  },
+  {
+    "id": 59,
+    "precioCab": 1,
+    "codigo": "7840595000114",
+    "precio": 5950
+  },
+  {
+    "id": 60,
+    "precioCab": 1,
+    "codigo": "7840595000176",
+    "precio": 11300
+  },
+  {
+    "id": 61,
+    "precioCab": 1,
+    "codigo": "7840595000169",
+    "precio": 6000
+  },
+  {
+    "id": 62,
+    "precioCab": 1,
+    "codigo": "7840595000237",
+    "precio": 0
+  },
+  {
+    "id": 63,
+    "precioCab": 1,
+    "codigo": "7840595000220",
+    "precio": 0
+  },
+  {
+    "id": 64,
+    "precioCab": 1,
+    "codigo": "7840595004884",
+    "precio": 9000
+  },
+  {
+    "id": 65,
+    "precioCab": 1,
+    "codigo": "7840595002903",
+    "precio": 2350
+  },
+  {
+    "id": 66,
+    "precioCab": 1,
+    "codigo": "7841849000102",
+    "precio": 0
+  },
+  {
+    "id": 67,
+    "precioCab": 1,
+    "codigo": "7841849000119",
+    "precio": 0
+  },
+  {
+    "id": 68,
+    "precioCab": 1,
+    "codigo": "4311501034002",
+    "precio": 19950
+  },
+  {
+    "id": 69,
+    "precioCab": 1,
+    "codigo": "7840821001595",
+    "precio": 0
+  },
+  {
+    "id": 70,
+    "precioCab": 1,
+    "codigo": "7802215510021",
+    "precio": 19200
+  },
+  {
+    "id": 71,
+    "precioCab": 1,
+    "codigo": "7896063230057",
+    "precio": 29900
+  },
+  {
+    "id": 72,
+    "precioCab": 1,
+    "codigo": "7896063285446",
+    "precio": 29900
+  },
+  {
+    "id": 73,
+    "precioCab": 1,
+    "codigo": "7840591003713",
+    "precio": 11650
+  },
+  {
+    "id": 74,
+    "precioCab": 1,
+    "codigo": "7840591003683",
+    "precio": 1850
+  },
+  {
+    "id": 75,
+    "precioCab": 1,
+    "codigo": "7840591003690",
+    "precio": 3150
+  },
+  {
+    "id": 76,
+    "precioCab": 1,
+    "codigo": "7840078000310",
+    "precio": 0
+  },
+  {
+    "id": 77,
+    "precioCab": 1,
+    "codigo": "7840078001249",
+    "precio": 0
+  },
+  {
+    "id": 78,
+    "precioCab": 1,
+    "codigo": "7840078000129",
+    "precio": 0
+  },
+  {
+    "id": 79,
+    "precioCab": 1,
+    "codigo": "7840078000587",
+    "precio": 0
+  },
+  {
+    "id": 80,
+    "precioCab": 1,
+    "codigo": "7840127000230",
+    "precio": 11250
+  },
+  {
+    "id": 81,
+    "precioCab": 1,
+    "codigo": "7840127000223",
+    "precio": 6400
+  },
+  {
+    "id": 82,
+    "precioCab": 1,
+    "codigo": "7840127000124",
+    "precio": 13250
+  },
+  {
+    "id": 83,
+    "precioCab": 1,
+    "codigo": "7840127001107",
+    "precio": 12300
+  },
+  {
+    "id": 84,
+    "precioCab": 1,
+    "codigo": "7840127000391",
+    "precio": 7400
+  },
+  {
+    "id": 85,
+    "precioCab": 1,
+    "codigo": "7840127000384",
+    "precio": 12700
+  },
+  {
+    "id": 86,
+    "precioCab": 1,
+    "codigo": "7840127000735",
+    "precio": 7150
+  },
+  {
+    "id": 87,
+    "precioCab": 1,
+    "codigo": "7840127000728",
+    "precio": 13000
+  },
+  {
+    "id": 88,
+    "precioCab": 1,
+    "codigo": "7840127000216",
+    "precio": 7500
+  },
+  {
+    "id": 89,
+    "precioCab": 1,
+    "codigo": "7840127000766",
+    "precio": 4750
+  },
+  {
+    "id": 90,
+    "precioCab": 1,
+    "codigo": "7840127000773",
+    "precio": 8550
+  },
+  {
+    "id": 91,
+    "precioCab": 1,
+    "codigo": "7840078002758",
+    "precio": 45500
+  },
+  {
+    "id": 92,
+    "precioCab": 1,
+    "codigo": "7840013000016",
+    "precio": 18500
+  },
+  {
+    "id": 93,
+    "precioCab": 1,
+    "codigo": "7840013000030",
+    "precio": 4900
+  },
+  {
+    "id": 94,
+    "precioCab": 1,
+    "codigo": "7840013000023",
+    "precio": 9550
+  },
+  {
+    "id": 95,
+    "precioCab": 1,
+    "codigo": "7840013000054",
+    "precio": 11100
+  },
+  {
+    "id": 96,
+    "precioCab": 1,
+    "codigo": "9900010934689",
+    "precio": 80000
+  },
+  {
+    "id": 97,
+    "precioCab": 1,
+    "codigo": "9900010953352",
+    "precio": 50000
+  },
+  {
+    "id": 98,
+    "precioCab": 1,
+    "codigo": "9900010953338",
+    "precio": 78000
+  },
+  {
+    "id": 99,
+    "precioCab": 1,
+    "codigo": "9900010962675",
+    "precio": 74500
+  },
+  {
+    "id": 100,
+    "precioCab": 1,
+    "codigo": "9900010934887",
+    "precio": 100000
+  },
+  {
+    "id": 101,
+    "precioCab": 1,
+    "codigo": "9900010953598",
+    "precio": 67000
+  },
+  {
+    "id": 102,
+    "precioCab": 1,
+    "codigo": "9900011625111",
+    "precio": 32000
+  },
+  {
+    "id": 103,
+    "precioCab": 1,
+    "codigo": "9900010932562",
+    "precio": 62500
+  },
+  {
+    "id": 104,
+    "precioCab": 1,
+    "codigo": "9900010932524",
+    "precio": 59500
+  },
+  {
+    "id": 105,
+    "precioCab": 1,
+    "codigo": "6954365301057",
+    "precio": 25000
+  },
+  {
+    "id": 106,
+    "precioCab": 1,
+    "codigo": "7450014123517",
+    "precio": 48750
+  },
+  {
+    "id": 107,
+    "precioCab": 1,
+    "codigo": "9900010967762",
+    "precio": 70000
+  },
+  {
+    "id": 108,
+    "precioCab": 1,
+    "codigo": "9900010953376",
+    "precio": 70000
+  },
+  {
+    "id": 109,
+    "precioCab": 1,
+    "codigo": "7846666302613",
+    "precio": 18250
+  },
+  {
+    "id": 110,
+    "precioCab": 1,
+    "codigo": "9900011186735",
+    "precio": 15000
+  },
+  {
+    "id": 111,
+    "precioCab": 1,
+    "codigo": "9900011186742",
+    "precio": 22500
+  },
+  {
+    "id": 112,
+    "precioCab": 1,
+    "codigo": "9900011186155",
+    "precio": 18000
+  },
+  {
+    "id": 113,
+    "precioCab": 1,
+    "codigo": "9900011186292",
+    "precio": 15500
+  },
+  {
+    "id": 114,
+    "precioCab": 1,
+    "codigo": "9900011186148",
+    "precio": 30000
+  },
+  {
+    "id": 115,
+    "precioCab": 1,
+    "codigo": "9900011186544",
+    "precio": 4000
+  },
+  {
+    "id": 116,
+    "precioCab": 1,
+    "codigo": "7806810200073",
+    "precio": 18500
+  },
+  {
+    "id": 117,
+    "precioCab": 1,
+    "codigo": "7806810200028",
+    "precio": 49000
+  },
+  {
+    "id": 118,
+    "precioCab": 1,
+    "codigo": "9900011186278",
+    "precio": 11500
+  },
+  {
+    "id": 119,
+    "precioCab": 1,
+    "codigo": "9900011186513",
+    "precio": 58500
+  },
+  {
+    "id": 120,
+    "precioCab": 1,
+    "codigo": "9900011186193",
+    "precio": 18000
+  },
+  {
+    "id": 121,
+    "precioCab": 1,
+    "codigo": "9900011167307",
+    "precio": 13000
+  },
+  {
+    "id": 122,
+    "precioCab": 1,
+    "codigo": "9900011565585",
+    "precio": 12000
+  },
+  {
+    "id": 123,
+    "precioCab": 1,
+    "codigo": "9900011565592",
+    "precio": 15500
+  },
+  {
+    "id": 124,
+    "precioCab": 1,
+    "codigo": "9900011565608",
+    "precio": 20000
+  },
+  {
+    "id": 125,
+    "precioCab": 1,
+    "codigo": "9900011564830",
+    "precio": 23000
+  },
+  {
+    "id": 126,
+    "precioCab": 1,
+    "codigo": "9900011564335",
+    "precio": 8500
+  },
+  {
+    "id": 127,
+    "precioCab": 1,
+    "codigo": "9900011564298",
+    "precio": 6500
+  },
+  {
+    "id": 128,
+    "precioCab": 1,
+    "codigo": "9900011564410",
+    "precio": 14000
+  },
+  {
+    "id": 129,
+    "precioCab": 1,
+    "codigo": "9900011564342",
+    "precio": 9500
+  },
+  {
+    "id": 130,
+    "precioCab": 1,
+    "codigo": "9900011563871",
+    "precio": 18500
+  },
+  {
+    "id": 131,
+    "precioCab": 1,
+    "codigo": "9900011564304",
+    "precio": 9500
+  },
+  {
+    "id": 132,
+    "precioCab": 1,
+    "codigo": "9900011564274",
+    "precio": 14500
+  },
+  {
+    "id": 133,
+    "precioCab": 1,
+    "codigo": "9900011564427",
+    "precio": 16000
+  },
+  {
+    "id": 134,
+    "precioCab": 1,
+    "codigo": "9900011563888",
+    "precio": 23500
+  },
+  {
+    "id": 135,
+    "precioCab": 1,
+    "codigo": "9900011564281",
+    "precio": 16000
+  },
+  {
+    "id": 136,
+    "precioCab": 1,
+    "codigo": "9900011564311",
+    "precio": 15000
+  },
+  {
+    "id": 137,
+    "precioCab": 1,
+    "codigo": "9900011564328",
+    "precio": 17500
+  },
+  {
+    "id": 138,
+    "precioCab": 1,
+    "codigo": "9900011564434",
+    "precio": 19000
+  },
+  {
+    "id": 139,
+    "precioCab": 1,
+    "codigo": "9900011564366",
+    "precio": 15000
+  },
+  {
+    "id": 140,
+    "precioCab": 1,
+    "codigo": "9900011564441",
+    "precio": 22000
+  },
+  {
+    "id": 141,
+    "precioCab": 1,
+    "codigo": "7891155017271",
+    "precio": 14000
+  },
+  {
+    "id": 142,
+    "precioCab": 1,
+    "codigo": "7891155040903",
+    "precio": 11650
+  },
+  {
+    "id": 143,
+    "precioCab": 1,
+    "codigo": "7891155047148",
+    "precio": 14000
+  },
+  {
+    "id": 144,
+    "precioCab": 1,
+    "codigo": "7891155038955",
+    "precio": 10450
+  },
+  {
+    "id": 145,
+    "precioCab": 1,
+    "codigo": "7891155042600",
+    "precio": 17450
+  },
+  {
+    "id": 146,
+    "precioCab": 1,
+    "codigo": "9900011178624",
+    "precio": 12500
+  },
+  {
+    "id": 147,
+    "precioCab": 1,
+    "codigo": "9900011178570",
+    "precio": 12500
+  },
+  {
+    "id": 148,
+    "precioCab": 1,
+    "codigo": "9900011178532",
+    "precio": 12500
+  },
+  {
+    "id": 149,
+    "precioCab": 1,
+    "codigo": "7891155056584",
+    "precio": 14600
+  },
+  {
+    "id": 150,
+    "precioCab": 1,
+    "codigo": "7891155022183",
+    "precio": 11650
+  },
+  {
+    "id": 151,
+    "precioCab": 1,
+    "codigo": "7891155002512",
+    "precio": 5000
+  },
+  {
+    "id": 152,
+    "precioCab": 1,
+    "codigo": "7891155002499",
+    "precio": 6150
+  },
+  {
+    "id": 153,
+    "precioCab": 1,
+    "codigo": "7891155013839",
+    "precio": 7100
+  },
+  {
+    "id": 154,
+    "precioCab": 1,
+    "codigo": "7891155003939",
+    "precio": 4950
+  },
+  {
+    "id": 155,
+    "precioCab": 1,
+    "codigo": "7891155036388",
+    "precio": 2450
+  },
+  {
+    "id": 156,
+    "precioCab": 1,
+    "codigo": "7891155002529",
+    "precio": 5200
+  },
+  {
+    "id": 157,
+    "precioCab": 1,
+    "codigo": "7891155005032",
+    "precio": 3800
+  },
+  {
+    "id": 158,
+    "precioCab": 1,
+    "codigo": "7891155004691",
+    "precio": 6450
+  },
+  {
+    "id": 159,
+    "precioCab": 1,
+    "codigo": "7891155008040",
+    "precio": 7300
+  },
+  {
+    "id": 160,
+    "precioCab": 1,
+    "codigo": "7891155002604",
+    "precio": 2750
+  },
+  {
+    "id": 161,
+    "precioCab": 1,
+    "codigo": "9900011168908",
+    "precio": 63100
+  },
+  {
+    "id": 162,
+    "precioCab": 1,
+    "codigo": "9900011168915",
+    "precio": 76500
+  },
+  {
+    "id": 163,
+    "precioCab": 1,
+    "codigo": "9900010992375",
+    "precio": 10000
+  },
+  {
+    "id": 164,
+    "precioCab": 1,
+    "codigo": "9900011218092",
+    "precio": 7500
+  },
+  {
+    "id": 165,
+    "precioCab": 1,
+    "codigo": "9900011218184",
+    "precio": 8000
+  },
+  {
+    "id": 166,
+    "precioCab": 1,
+    "codigo": "9900011009812",
+    "precio": 12600
+  },
+  {
+    "id": 167,
+    "precioCab": 1,
+    "codigo": "9900011255257",
+    "precio": 6100
+  },
+  {
+    "id": 168,
+    "precioCab": 1,
+    "codigo": "9900011255172",
+    "precio": 7600
+  },
+  {
+    "id": 169,
+    "precioCab": 1,
+    "codigo": "9900011255264",
+    "precio": 6600
+  },
+  {
+    "id": 170,
+    "precioCab": 1,
+    "codigo": "9900011255134",
+    "precio": 17900
+  },
+  {
+    "id": 171,
+    "precioCab": 1,
+    "codigo": "9900011009850",
+    "precio": 10000
+  },
+  {
+    "id": 172,
+    "precioCab": 1,
+    "codigo": "9900011629461",
+    "precio": 15200
+  },
+  {
+    "id": 173,
+    "precioCab": 1,
+    "codigo": "9900011629492",
+    "precio": 15300
+  },
+  {
+    "id": 174,
+    "precioCab": 1,
+    "codigo": "9900011254809",
+    "precio": 15800
+  },
+  {
+    "id": 175,
+    "precioCab": 1,
+    "codigo": "9900011629409",
+    "precio": 19100
+  },
+  {
+    "id": 176,
+    "precioCab": 1,
+    "codigo": "9900011629485",
+    "precio": 22300
+  },
+  {
+    "id": 177,
+    "precioCab": 1,
+    "codigo": "9900011002486",
+    "precio": 8000
+  },
+  {
+    "id": 178,
+    "precioCab": 1,
+    "codigo": "9900011002462",
+    "precio": 10500
+  },
+  {
+    "id": 179,
+    "precioCab": 1,
+    "codigo": "1898978188832",
+    "precio": 0
+  },
+  {
+    "id": 180,
+    "precioCab": 1,
+    "codigo": "1898978251574",
+    "precio": 13000
+  },
+  {
+    "id": 181,
+    "precioCab": 1,
+    "codigo": "9900011217972",
+    "precio": 10900
+  },
+  {
+    "id": 182,
+    "precioCab": 1,
+    "codigo": "9900011217996",
+    "precio": 11000
+  },
+  {
+    "id": 183,
+    "precioCab": 1,
+    "codigo": "9900011184410",
+    "precio": 30500
+  },
+  {
+    "id": 184,
+    "precioCab": 1,
+    "codigo": "9900011184502",
+    "precio": 7500
+  },
+  {
+    "id": 185,
+    "precioCab": 1,
+    "codigo": "9900011179874",
+    "precio": 16500
+  },
+  {
+    "id": 186,
+    "precioCab": 1,
+    "codigo": "9900011015661",
+    "precio": 2500
+  },
+  {
+    "id": 187,
+    "precioCab": 1,
+    "codigo": "9900011260251",
+    "precio": 8500
+  },
+  {
+    "id": 188,
+    "precioCab": 1,
+    "codigo": "9900011187978",
+    "precio": 14500
+  },
+  {
+    "id": 189,
+    "precioCab": 1,
+    "codigo": "9900011187961",
+    "precio": 23000
+  },
+  {
+    "id": 190,
+    "precioCab": 1,
+    "codigo": "9900011220354",
+    "precio": 5000
+  },
+  {
+    "id": 191,
+    "precioCab": 1,
+    "codigo": "9900011220385",
+    "precio": 7500
+  },
+  {
+    "id": 192,
+    "precioCab": 1,
+    "codigo": "9900011220330",
+    "precio": 5000
+  },
+  {
+    "id": 193,
+    "precioCab": 1,
+    "codigo": "6952089201837",
+    "precio": 50000
+  },
+  {
+    "id": 194,
+    "precioCab": 1,
+    "codigo": "9900010923775",
+    "precio": 66300
+  },
+  {
+    "id": 195,
+    "precioCab": 1,
+    "codigo": "9900011262842",
+    "precio": 13050
+  },
+  {
+    "id": 196,
+    "precioCab": 1,
+    "codigo": "9900011163743",
+    "precio": 20500
+  },
+  {
+    "id": 197,
+    "precioCab": 1,
+    "codigo": "9900011163705",
+    "precio": 12000
+  },
+  {
+    "id": 198,
+    "precioCab": 1,
+    "codigo": "9900011190077",
+    "precio": 12000
+  },
+  {
+    "id": 199,
+    "precioCab": 1,
+    "codigo": "9900011158381",
+    "precio": 17500
+  },
+  {
+    "id": 200,
+    "precioCab": 1,
+    "codigo": "70870",
+    "precio": 35350
+  },
+  {
+    "id": 201,
+    "precioCab": 1,
+    "codigo": "70550",
+    "precio": 0
+  },
+  {
+    "id": 202,
+    "precioCab": 1,
+    "codigo": "9289",
+    "precio": 19500
+  },
+  {
+    "id": 203,
+    "precioCab": 1,
+    "codigo": "70513",
+    "precio": 23950
+  },
+  {
+    "id": 204,
+    "precioCab": 1,
+    "codigo": "9391",
+    "precio": 19750
+  },
+  {
+    "id": 205,
+    "precioCab": 1,
+    "codigo": "7840369041206",
+    "precio": 33750
+  },
+  {
+    "id": 206,
+    "precioCab": 1,
+    "codigo": "642649",
+    "precio": 35000
+  },
+  {
+    "id": 207,
+    "precioCab": 1,
+    "codigo": "7840369040919",
+    "precio": 28300
+  },
+  {
+    "id": 208,
+    "precioCab": 1,
+    "codigo": "70233",
+    "precio": 29500
+  },
+  {
+    "id": 209,
+    "precioCab": 1,
+    "codigo": "70610",
+    "precio": 31500
+  },
+  {
+    "id": 210,
+    "precioCab": 1,
+    "codigo": "70614",
+    "precio": 24900
+  },
+  {
+    "id": 211,
+    "precioCab": 1,
+    "codigo": "70612",
+    "precio": 35450
+  },
+  {
+    "id": 212,
+    "precioCab": 1,
+    "codigo": "71002",
+    "precio": 16100
+  },
+  {
+    "id": 213,
+    "precioCab": 1,
+    "codigo": "71327",
+    "precio": 14550
+  },
+  {
+    "id": 214,
+    "precioCab": 1,
+    "codigo": "71326",
+    "precio": 14550
+  },
+  {
+    "id": 215,
+    "precioCab": 1,
+    "codigo": "75650",
+    "precio": 48250
+  },
+  {
+    "id": 216,
+    "precioCab": 1,
+    "codigo": "71452",
+    "precio": 37500
+  },
+  {
+    "id": 217,
+    "precioCab": 1,
+    "codigo": "70641",
+    "precio": 40500
+  },
+  {
+    "id": 218,
+    "precioCab": 1,
+    "codigo": "75648",
+    "precio": 57600
+  },
+  {
+    "id": 219,
+    "precioCab": 1,
+    "codigo": "89471",
+    "precio": 61800
+  },
+  {
+    "id": 220,
+    "precioCab": 1,
+    "codigo": "73258",
+    "precio": 49400
+  },
+  {
+    "id": 221,
+    "precioCab": 1,
+    "codigo": "75021",
+    "precio": 70000
+  },
+  {
+    "id": 222,
+    "precioCab": 1,
+    "codigo": "70001",
+    "precio": 7800
+  },
+  {
+    "id": 223,
+    "precioCab": 1,
+    "codigo": "70002",
+    "precio": 10800
+  },
+  {
+    "id": 224,
+    "precioCab": 1,
+    "codigo": "7042",
+    "precio": 40000
+  },
+  {
+    "id": 225,
+    "precioCab": 1,
+    "codigo": "771500",
+    "precio": 0
+  },
+  {
+    "id": 226,
+    "precioCab": 1,
+    "codigo": "70104",
+    "precio": 41950
+  },
+  {
+    "id": 227,
+    "precioCab": 1,
+    "codigo": "70103",
+    "precio": 25450
+  },
+  {
+    "id": 228,
+    "precioCab": 1,
+    "codigo": "7840699002250",
+    "precio": 13750
+  },
+  {
+    "id": 229,
+    "precioCab": 1,
+    "codigo": "7840699002243",
+    "precio": 22150
+  },
+  {
+    "id": 230,
+    "precioCab": 1,
+    "codigo": "7840606002298",
+    "precio": 27600
+  },
+  {
+    "id": 231,
+    "precioCab": 1,
+    "codigo": "7840606002304",
+    "precio": 19800
+  },
+  {
+    "id": 232,
+    "precioCab": 1,
+    "codigo": "7120",
+    "precio": 0
+  },
+  {
+    "id": 233,
+    "precioCab": 1,
+    "codigo": "71473",
+    "precio": 80000
+  },
+  {
+    "id": 234,
+    "precioCab": 1,
+    "codigo": "8410053150379",
+    "precio": 166750
+  },
+  {
+    "id": 235,
+    "precioCab": 1,
+    "codigo": "71048",
+    "precio": 73000
+  },
+  {
+    "id": 236,
+    "precioCab": 1,
+    "codigo": "72000",
+    "precio": 24000
+  },
+  {
+    "id": 237,
+    "precioCab": 1,
+    "codigo": "43725",
+    "precio": 160100
+  },
+  {
+    "id": 238,
+    "precioCab": 1,
+    "codigo": "72001",
+    "precio": 60000
+  },
+  {
+    "id": 239,
+    "precioCab": 1,
+    "codigo": "8410053154964",
+    "precio": 68500
+  },
+  {
+    "id": 240,
+    "precioCab": 1,
+    "codigo": "8410053151840",
+    "precio": 106950
+  },
+  {
+    "id": 241,
+    "precioCab": 1,
+    "codigo": "96793",
+    "precio": 139500
+  },
+  {
+    "id": 242,
+    "precioCab": 1,
+    "codigo": "75120",
+    "precio": 51000
+  },
+  {
+    "id": 243,
+    "precioCab": 1,
+    "codigo": "80032",
+    "precio": 8500
+  },
+  {
+    "id": 244,
+    "precioCab": 1,
+    "codigo": "8059",
+    "precio": 8000
+  },
+  {
+    "id": 245,
+    "precioCab": 1,
+    "codigo": "30793",
+    "precio": 48000
+  },
+  {
+    "id": 246,
+    "precioCab": 1,
+    "codigo": "87754",
+    "precio": 10000
+  },
+  {
+    "id": 247,
+    "precioCab": 1,
+    "codigo": "8030",
+    "precio": 29000
+  },
+  {
+    "id": 248,
+    "precioCab": 1,
+    "codigo": "88726",
+    "precio": 37000
+  },
+  {
+    "id": 249,
+    "precioCab": 1,
+    "codigo": "80128",
+    "precio": 28900
+  },
+  {
+    "id": 250,
+    "precioCab": 1,
+    "codigo": "8004",
+    "precio": 25500
+  },
+  {
+    "id": 251,
+    "precioCab": 1,
+    "codigo": "80039",
+    "precio": 28000
+  },
+  {
+    "id": 252,
+    "precioCab": 1,
+    "codigo": "30760",
+    "precio": 6000
+  },
+  {
+    "id": 253,
+    "precioCab": 1,
+    "codigo": "11798",
+    "precio": 45000
+  },
+  {
+    "id": 254,
+    "precioCab": 1,
+    "codigo": "30742",
+    "precio": 38000
+  },
+  {
+    "id": 255,
+    "precioCab": 1,
+    "codigo": "30743",
+    "precio": 32000
+  },
+  {
+    "id": 256,
+    "precioCab": 1,
+    "codigo": "8049",
+    "precio": 62500
+  },
+  {
+    "id": 257,
+    "precioCab": 1,
+    "codigo": "8390",
+    "precio": 45000
+  },
+  {
+    "id": 258,
+    "precioCab": 1,
+    "codigo": "3082",
+    "precio": 43000
+  },
+  {
+    "id": 259,
+    "precioCab": 1,
+    "codigo": "8015",
+    "precio": 34000
+  },
+  {
+    "id": 260,
+    "precioCab": 1,
+    "codigo": "8931",
+    "precio": 39000
+  },
+  {
+    "id": 261,
+    "precioCab": 1,
+    "codigo": "81658",
+    "precio": 37700
+  },
+  {
+    "id": 262,
+    "precioCab": 1,
+    "codigo": "90699",
+    "precio": 201700
+  },
+  {
+    "id": 263,
+    "precioCab": 1,
+    "codigo": "9057",
+    "precio": 16150
+  },
+  {
+    "id": 264,
+    "precioCab": 1,
+    "codigo": "9023",
+    "precio": 7500
+  },
+  {
+    "id": 265,
+    "precioCab": 1,
+    "codigo": "41017",
+    "precio": 104600
+  },
+  {
+    "id": 266,
+    "precioCab": 1,
+    "codigo": "9066",
+    "precio": 41050
+  },
+  {
+    "id": 267,
+    "precioCab": 1,
+    "codigo": "90132",
+    "precio": 66250
+  },
+  {
+    "id": 268,
+    "precioCab": 1,
+    "codigo": "90173",
+    "precio": 34850
+  },
+  {
+    "id": 269,
+    "precioCab": 1,
+    "codigo": "9878",
+    "precio": 22450
+  },
+  {
+    "id": 270,
+    "precioCab": 1,
+    "codigo": "9099",
+    "precio": 55100
+  },
+  {
+    "id": 271,
+    "precioCab": 1,
+    "codigo": "90137",
+    "precio": 31950
+  },
+  {
+    "id": 272,
+    "precioCab": 1,
+    "codigo": "90175",
+    "precio": 5450
+  },
+  {
+    "id": 273,
+    "precioCab": 1,
+    "codigo": "13610",
+    "precio": 27400
+  },
+  {
+    "id": 274,
+    "precioCab": 1,
+    "codigo": "9028",
+    "precio": 10150
+  },
+  {
+    "id": 275,
+    "precioCab": 1,
+    "codigo": "9024",
+    "precio": 40750
+  },
+  {
+    "id": 276,
+    "precioCab": 1,
+    "codigo": "9074",
+    "precio": 23100
+  },
+  {
+    "id": 277,
+    "precioCab": 1,
+    "codigo": "90474",
+    "precio": 11200
+  },
+  {
+    "id": 278,
+    "precioCab": 1,
+    "codigo": "90414",
+    "precio": 13100
+  },
+  {
+    "id": 279,
+    "precioCab": 1,
+    "codigo": "9069",
+    "precio": 28950
+  },
+  {
+    "id": 280,
+    "precioCab": 1,
+    "codigo": "90510",
+    "precio": 21600
+  },
+  {
+    "id": 281,
+    "precioCab": 1,
+    "codigo": "90152",
+    "precio": 21600
+  },
+  {
+    "id": 282,
+    "precioCab": 1,
+    "codigo": "90031",
+    "precio": 2050
+  },
+  {
+    "id": 283,
+    "precioCab": 1,
+    "codigo": "90104",
+    "precio": 17950
+  },
+  {
+    "id": 284,
+    "precioCab": 1,
+    "codigo": "9001",
+    "precio": 5000
+  },
+  {
+    "id": 285,
+    "precioCab": 1,
+    "codigo": "62340",
+    "precio": 1150
+  },
+  {
+    "id": 286,
+    "precioCab": 1,
+    "codigo": "9010",
+    "precio": 53750
+  },
+  {
+    "id": 287,
+    "precioCab": 1,
+    "codigo": "90377",
+    "precio": 6850
+  },
+  {
+    "id": 288,
+    "precioCab": 1,
+    "codigo": "90379",
+    "precio": 7850
+  },
+  {
+    "id": 289,
+    "precioCab": 1,
+    "codigo": "9029",
+    "precio": 3300
+  },
+  {
+    "id": 290,
+    "precioCab": 1,
+    "codigo": "91750",
+    "precio": 5000
+  },
+  {
+    "id": 291,
+    "precioCab": 1,
+    "codigo": "9021",
+    "precio": 4200
+  },
+  {
+    "id": 292,
+    "precioCab": 1,
+    "codigo": "9016",
+    "precio": 2650
+  },
+  {
+    "id": 293,
+    "precioCab": 1,
+    "codigo": "90206",
+    "precio": 7250
+  },
+  {
+    "id": 294,
+    "precioCab": 1,
+    "codigo": "9055",
+    "precio": 20650
+  },
+  {
+    "id": 295,
+    "precioCab": 1,
+    "codigo": "9022",
+    "precio": 3350
+  },
+  {
+    "id": 296,
+    "precioCab": 1,
+    "codigo": "90383",
+    "precio": 45950
+  },
+  {
+    "id": 297,
+    "precioCab": 1,
+    "codigo": "90916",
+    "precio": 13500
+  },
+  {
+    "id": 298,
+    "precioCab": 1,
+    "codigo": "90207",
+    "precio": 8500
+  },
+  {
+    "id": 299,
+    "precioCab": 1,
+    "codigo": "90007",
+    "precio": 10500
+  },
+  {
+    "id": 300,
+    "precioCab": 1,
+    "codigo": "9068",
+    "precio": 8350
+  },
+  {
+    "id": 301,
+    "precioCab": 1,
+    "codigo": "90154",
+    "precio": 12750
+  },
+  {
+    "id": 302,
+    "precioCab": 1,
+    "codigo": "7896691104492",
+    "precio": 4000
+  },
+  {
+    "id": 303,
+    "precioCab": 1,
+    "codigo": "7896691104515",
+    "precio": 4000
+  },
+  {
+    "id": 304,
+    "precioCab": 1,
+    "codigo": "7896691104508",
+    "precio": 14900
+  },
+  {
+    "id": 305,
+    "precioCab": 1,
+    "codigo": "7896691103129",
+    "precio": 4000
+  },
+  {
+    "id": 306,
+    "precioCab": 1,
+    "codigo": "7896691103211",
+    "precio": 14900
+  },
+  {
+    "id": 307,
+    "precioCab": 1,
+    "codigo": "7896691103471",
+    "precio": 7900
+  },
+  {
+    "id": 308,
+    "precioCab": 1,
+    "codigo": "7896691103006",
+    "precio": 7900
+  },
+  {
+    "id": 309,
+    "precioCab": 1,
+    "codigo": "7896691103013",
+    "precio": 7900
+  },
+  {
+    "id": 310,
+    "precioCab": 1,
+    "codigo": "7840005014045",
+    "precio": 6350
+  },
+  {
+    "id": 311,
+    "precioCab": 1,
+    "codigo": "746515",
+    "precio": 5450
+  },
+  {
+    "id": 312,
+    "precioCab": 1,
+    "codigo": "7840042000131",
+    "precio": 6350
+  },
+  {
+    "id": 313,
+    "precioCab": 1,
+    "codigo": "7613035764552",
+    "precio": 0
+  },
+  {
+    "id": 314,
+    "precioCab": 1,
+    "codigo": "7840042003019",
+    "precio": 24800
+  },
+  {
+    "id": 315,
+    "precioCab": 1,
+    "codigo": "7840042003026",
+    "precio": 14150
+  },
+  {
+    "id": 316,
+    "precioCab": 1,
+    "codigo": "7840042003033",
+    "precio": 7650
+  },
+  {
+    "id": 317,
+    "precioCab": 1,
+    "codigo": "7891000253182",
+    "precio": 12800
+  },
+  {
+    "id": 318,
+    "precioCab": 1,
+    "codigo": "7891000120101",
+    "precio": 0
+  },
+  {
+    "id": 319,
+    "precioCab": 1,
+    "codigo": "7891000126905",
+    "precio": 0
+  },
+  {
+    "id": 320,
+    "precioCab": 1,
+    "codigo": "7898686950565",
+    "precio": 0
+  },
+  {
+    "id": 321,
+    "precioCab": 1,
+    "codigo": "7840006202892",
+    "precio": 0
+  },
+  {
+    "id": 322,
+    "precioCab": 1,
+    "codigo": "7840006203516",
+    "precio": 0
+  },
+  {
+    "id": 323,
+    "precioCab": 1,
+    "codigo": "7896183201159",
+    "precio": 7500
+  },
+  {
+    "id": 324,
+    "precioCab": 1,
+    "codigo": "7896183201395",
+    "precio": 14900
+  },
+  {
+    "id": 325,
+    "precioCab": 1,
+    "codigo": "7840037001075",
+    "precio": 14150
+  },
+  {
+    "id": 326,
+    "precioCab": 1,
+    "codigo": "7840037001389",
+    "precio": 9450
+  },
+  {
+    "id": 327,
+    "precioCab": 1,
+    "codigo": "7840006204360",
+    "precio": 14950
+  },
+  {
+    "id": 328,
+    "precioCab": 1,
+    "codigo": "7840005000352",
+    "precio": 23600
+  },
+  {
+    "id": 329,
+    "precioCab": 1,
+    "codigo": "7898215157113",
+    "precio": 33000
+  },
+  {
+    "id": 330,
+    "precioCab": 1,
+    "codigo": "7898215157106",
+    "precio": 33000
+  },
+  {
+    "id": 331,
+    "precioCab": 1,
+    "codigo": "7898215157175",
+    "precio": 33000
+  },
+  {
+    "id": 332,
+    "precioCab": 1,
+    "codigo": "7898215157120",
+    "precio": 33000
+  },
+  {
+    "id": 333,
+    "precioCab": 1,
+    "codigo": "7804671930252",
+    "precio": 27000
+  },
+  {
+    "id": 334,
+    "precioCab": 1,
+    "codigo": "7804671930238",
+    "precio": 26500
+  },
+  {
+    "id": 335,
+    "precioCab": 1,
+    "codigo": "7804671930320",
+    "precio": 11000
+  },
+  {
+    "id": 336,
+    "precioCab": 1,
+    "codigo": "7804671930245",
+    "precio": 26500
+  },
+  {
+    "id": 337,
+    "precioCab": 1,
+    "codigo": "7804671930276",
+    "precio": 26500
+  },
+  {
+    "id": 338,
+    "precioCab": 1,
+    "codigo": "7804671930344",
+    "precio": 11000
+  },
+  {
+    "id": 339,
+    "precioCab": 1,
+    "codigo": "7804671930313",
+    "precio": 27000
+  },
+  {
+    "id": 340,
+    "precioCab": 1,
+    "codigo": "7804671930290",
+    "precio": 27000
+  },
+  {
+    "id": 341,
+    "precioCab": 1,
+    "codigo": "7804671930306",
+    "precio": 27000
+  },
+  {
+    "id": 342,
+    "precioCab": 1,
+    "codigo": "7790742340108",
+    "precio": 31000
+  },
+  {
+    "id": 343,
+    "precioCab": 1,
+    "codigo": "7898994972112",
+    "precio": 0
+  },
+  {
+    "id": 344,
+    "precioCab": 1,
+    "codigo": "7898994972105",
+    "precio": 0
+  },
+  {
+    "id": 345,
+    "precioCab": 1,
+    "codigo": "7840976000016",
+    "precio": 33300
+  },
+  {
+    "id": 346,
+    "precioCab": 1,
+    "codigo": "7898905356154",
+    "precio": 19550
+  },
+  {
+    "id": 347,
+    "precioCab": 1,
+    "codigo": "7898370100023",
+    "precio": 10900
+  },
+  {
+    "id": 348,
+    "precioCab": 1,
+    "codigo": "7898370100030",
+    "precio": 25900
+  },
+  {
+    "id": 349,
+    "precioCab": 1,
+    "codigo": "7891000108277",
+    "precio": 0
+  },
+  {
+    "id": 350,
+    "precioCab": 1,
+    "codigo": "7891030000138",
+    "precio": 17500
+  },
+  {
+    "id": 351,
+    "precioCab": 1,
+    "codigo": "7891000065440",
+    "precio": 0
+  },
+  {
+    "id": 352,
+    "precioCab": 1,
+    "codigo": "7891097101427",
+    "precio": 14750
+  },
+  {
+    "id": 353,
+    "precioCab": 1,
+    "codigo": "7896051116592",
+    "precio": 0
+  },
+  {
+    "id": 354,
+    "precioCab": 1,
+    "codigo": "7840029000277",
+    "precio": 0
+  },
+  {
+    "id": 355,
+    "precioCab": 1,
+    "codigo": "7840029872294",
+    "precio": 0
+  },
+  {
+    "id": 356,
+    "precioCab": 1,
+    "codigo": "7840030002468",
+    "precio": 8000
+  },
+  {
+    "id": 357,
+    "precioCab": 1,
+    "codigo": "7840042002500",
+    "precio": 10200
+  },
+  {
+    "id": 358,
+    "precioCab": 1,
+    "codigo": "7840042002548",
+    "precio": 5400
+  },
+  {
+    "id": 359,
+    "precioCab": 1,
+    "codigo": "7840042002517",
+    "precio": 2600
+  },
+  {
+    "id": 360,
+    "precioCab": 1,
+    "codigo": "7891000110829",
+    "precio": 11600
+  },
+  {
+    "id": 361,
+    "precioCab": 1,
+    "codigo": "7840006204797",
+    "precio": 10000
+  },
+  {
+    "id": 362,
+    "precioCab": 1,
+    "codigo": "7840005000062",
+    "precio": 2600
+  },
+  {
+    "id": 363,
+    "precioCab": 1,
+    "codigo": "7840030003205",
+    "precio": 42000
+  },
+  {
+    "id": 364,
+    "precioCab": 1,
+    "codigo": "7793913001990",
+    "precio": 23200
+  },
+  {
+    "id": 365,
+    "precioCab": 1,
+    "codigo": "7790787172566",
+    "precio": 0
+  },
+  {
+    "id": 366,
+    "precioCab": 1,
+    "codigo": "7790787002672",
+    "precio": 0
+  },
+  {
+    "id": 367,
+    "precioCab": 1,
+    "codigo": "7840006163018",
+    "precio": 10550
+  },
+  {
+    "id": 368,
+    "precioCab": 1,
+    "codigo": "7840006163025",
+    "precio": 3050
+  },
+  {
+    "id": 369,
+    "precioCab": 1,
+    "codigo": "7802920008141",
+    "precio": 12100
+  },
+  {
+    "id": 370,
+    "precioCab": 1,
+    "codigo": "7802920008158",
+    "precio": 12100
+  },
+  {
+    "id": 371,
+    "precioCab": 1,
+    "codigo": "7802920008110",
+    "precio": 0
+  },
+  {
+    "id": 372,
+    "precioCab": 1,
+    "codigo": "7802920008127",
+    "precio": 12100
+  },
+  {
+    "id": 373,
+    "precioCab": 1,
+    "codigo": "7840037014211",
+    "precio": 10450
+  },
+  {
+    "id": 374,
+    "precioCab": 1,
+    "codigo": "7840006161014",
+    "precio": 8300
+  },
+  {
+    "id": 375,
+    "precioCab": 1,
+    "codigo": "7840042000421",
+    "precio": 8800
+  },
+  {
+    "id": 376,
+    "precioCab": 1,
+    "codigo": "7840030002147",
+    "precio": 6900
+  },
+  {
+    "id": 377,
+    "precioCab": 1,
+    "codigo": "7790742363008",
+    "precio": 12500
+  },
+  {
+    "id": 378,
+    "precioCab": 1,
+    "codigo": "7840006201529",
+    "precio": 0
+  },
+  {
+    "id": 379,
+    "precioCab": 1,
+    "codigo": "7840005011174",
+    "precio": 6350
+  },
+  {
+    "id": 380,
+    "precioCab": 1,
+    "codigo": "7840005012904",
+    "precio": 3400
+  },
+  {
+    "id": 381,
+    "precioCab": 1,
+    "codigo": "7840037000917",
+    "precio": 8950
+  },
+  {
+    "id": 382,
+    "precioCab": 1,
+    "codigo": "14785",
+    "precio": 2250
+  },
+  {
+    "id": 383,
+    "precioCab": 1,
+    "codigo": "02161",
+    "precio": 6900
+  },
+  {
+    "id": 384,
+    "precioCab": 1,
+    "codigo": "7840037001310",
+    "precio": 7950
+  },
+  {
+    "id": 385,
+    "precioCab": 1,
+    "codigo": "7840031120000",
+    "precio": 6800
+  },
+  {
+    "id": 386,
+    "precioCab": 1,
+    "codigo": "7840006204834",
+    "precio": 0
+  },
+  {
+    "id": 387,
+    "precioCab": 1,
+    "codigo": "7840031110001",
+    "precio": 6800
+  },
+  {
+    "id": 388,
+    "precioCab": 1,
+    "codigo": "7840037001204",
+    "precio": 7950
+  },
+  {
+    "id": 389,
+    "precioCab": 1,
+    "codigo": "7840005013710",
+    "precio": 0
+  },
+  {
+    "id": 390,
+    "precioCab": 1,
+    "codigo": "7790742335807",
+    "precio": 15200
+  },
+  {
+    "id": 391,
+    "precioCab": 1,
+    "codigo": "7790742333605",
+    "precio": 15200
+  },
+  {
+    "id": 392,
+    "precioCab": 1,
+    "codigo": "7840042000384",
+    "precio": 8600
+  },
+  {
+    "id": 393,
+    "precioCab": 1,
+    "codigo": "7840042000391",
+    "precio": 2250
+  },
+  {
+    "id": 394,
+    "precioCab": 1,
+    "codigo": "7840030002505",
+    "precio": 4400
+  },
+  {
+    "id": 395,
+    "precioCab": 1,
+    "codigo": "7840031140107",
+    "precio": 4700
+  },
+  {
+    "id": 396,
+    "precioCab": 1,
+    "codigo": "7840031105007",
+    "precio": 3550
+  },
+  {
+    "id": 397,
+    "precioCab": 1,
+    "codigo": "7840042101746",
+    "precio": 3100
+  },
+  {
+    "id": 398,
+    "precioCab": 1,
+    "codigo": "7840005002011",
+    "precio": 3050
+  },
+  {
+    "id": 399,
+    "precioCab": 1,
+    "codigo": "7840006201550",
+    "precio": 0
+  },
+  {
+    "id": 400,
+    "precioCab": 1,
+    "codigo": "7840005013789",
+    "precio": 0
+  },
+  {
+    "id": 401,
+    "precioCab": 1,
+    "codigo": "7840005013772",
+    "precio": 0
+  },
+  {
+    "id": 402,
+    "precioCab": 1,
+    "codigo": "7840030002376",
+    "precio": 2150
+  },
+  {
+    "id": 403,
+    "precioCab": 1,
+    "codigo": "7840030002369",
+    "precio": 2150
+  },
+  {
+    "id": 404,
+    "precioCab": 1,
+    "codigo": "7412896",
+    "precio": 0
+  },
+  {
+    "id": 405,
+    "precioCab": 1,
+    "codigo": "7840006201680",
+    "precio": 0
+  },
+  {
+    "id": 406,
+    "precioCab": 1,
+    "codigo": "7840006201697",
+    "precio": 0
+  },
+  {
+    "id": 407,
+    "precioCab": 1,
+    "codigo": "7840006201253",
+    "precio": 0
+  },
+  {
+    "id": 408,
+    "precioCab": 1,
+    "codigo": "7840006201246",
+    "precio": 0
+  },
+  {
+    "id": 409,
+    "precioCab": 1,
+    "codigo": "7840030002932",
+    "precio": 2150
+  },
+  {
+    "id": 410,
+    "precioCab": 1,
+    "codigo": "7840030002925",
+    "precio": 2150
+  },
+  {
+    "id": 411,
+    "precioCab": 1,
+    "codigo": "7840037003178",
+    "precio": 1850
+  },
+  {
+    "id": 412,
+    "precioCab": 1,
+    "codigo": "7840037003161",
+    "precio": 1850
+  },
+  {
+    "id": 413,
+    "precioCab": 1,
+    "codigo": "7840030001720",
+    "precio": 1750
+  },
+  {
+    "id": 414,
+    "precioCab": 1,
+    "codigo": "7840042110656",
+    "precio": 7200
+  },
+  {
+    "id": 415,
+    "precioCab": 1,
+    "codigo": "7840042110632",
+    "precio": 1700
+  },
+  {
+    "id": 416,
+    "precioCab": 1,
+    "codigo": "7840042110649",
+    "precio": 3600
+  },
+  {
+    "id": 417,
+    "precioCab": 1,
+    "codigo": "7840042102651",
+    "precio": 7200
+  },
+  {
+    "id": 418,
+    "precioCab": 1,
+    "codigo": "7840042102637",
+    "precio": 1700
+  },
+  {
+    "id": 419,
+    "precioCab": 1,
+    "codigo": "7840042102644",
+    "precio": 3600
+  },
+  {
+    "id": 420,
+    "precioCab": 1,
+    "codigo": "7840042103658",
+    "precio": 7200
+  },
+  {
+    "id": 421,
+    "precioCab": 1,
+    "codigo": "7840042103634",
+    "precio": 1700
+  },
+  {
+    "id": 422,
+    "precioCab": 1,
+    "codigo": "7840042103641",
+    "precio": 3600
+  },
+  {
+    "id": 423,
+    "precioCab": 1,
+    "codigo": "7840042100657",
+    "precio": 7200
+  },
+  {
+    "id": 424,
+    "precioCab": 1,
+    "codigo": "7840042100633",
+    "precio": 1700
+  },
+  {
+    "id": 425,
+    "precioCab": 1,
+    "codigo": "7840042100640",
+    "precio": 3600
+  },
+  {
+    "id": 426,
+    "precioCab": 1,
+    "codigo": "7840042101654",
+    "precio": 7200
+  },
+  {
+    "id": 427,
+    "precioCab": 1,
+    "codigo": "7840042101630",
+    "precio": 1700
+  },
+  {
+    "id": 428,
+    "precioCab": 1,
+    "codigo": "7840042101647",
+    "precio": 3600
+  },
+  {
+    "id": 429,
+    "precioCab": 1,
+    "codigo": "7896691101002",
+    "precio": 18900
+  },
+  {
+    "id": 430,
+    "precioCab": 1,
+    "codigo": "7896691102801",
+    "precio": 18900
+  },
+  {
+    "id": 431,
+    "precioCab": 1,
+    "codigo": "7840042103528",
+    "precio": 3550
+  },
+  {
+    "id": 432,
+    "precioCab": 1,
+    "codigo": "7840042101524",
+    "precio": 3550
+  },
+  {
+    "id": 433,
+    "precioCab": 1,
+    "codigo": "7840042102521",
+    "precio": 3550
+  },
+  {
+    "id": 434,
+    "precioCab": 1,
+    "codigo": "6086",
+    "precio": 22000
+  },
+  {
+    "id": 435,
+    "precioCab": 1,
+    "codigo": "8265",
+    "precio": 45500
+  },
+  {
+    "id": 436,
+    "precioCab": 1,
+    "codigo": "8057",
+    "precio": 43000
+  },
+  {
+    "id": 437,
+    "precioCab": 1,
+    "codigo": "8014",
+    "precio": 37500
+  },
+  {
+    "id": 438,
+    "precioCab": 1,
+    "codigo": "80855",
+    "precio": 44000
+  },
+  {
+    "id": 439,
+    "precioCab": 1,
+    "codigo": "8005",
+    "precio": 8300
+  },
+  {
+    "id": 440,
+    "precioCab": 1,
+    "codigo": "8011",
+    "precio": 10200
+  },
+  {
+    "id": 441,
+    "precioCab": 1,
+    "codigo": "8008",
+    "precio": 8100
+  },
+  {
+    "id": 442,
+    "precioCab": 1,
+    "codigo": "80456",
+    "precio": 10700
+  },
+  {
+    "id": 443,
+    "precioCab": 1,
+    "codigo": "80424",
+    "precio": 10750
+  },
+  {
+    "id": 444,
+    "precioCab": 1,
+    "codigo": "80685",
+    "precio": 21500
+  },
+  {
+    "id": 445,
+    "precioCab": 1,
+    "codigo": "8241",
+    "precio": 29000
+  },
+  {
+    "id": 446,
+    "precioCab": 1,
+    "codigo": "80739",
+    "precio": 21500
+  },
+  {
+    "id": 447,
+    "precioCab": 1,
+    "codigo": "8096",
+    "precio": 19500
+  },
+  {
+    "id": 448,
+    "precioCab": 1,
+    "codigo": "8042",
+    "precio": 19500
+  },
+  {
+    "id": 449,
+    "precioCab": 1,
+    "codigo": "8097",
+    "precio": 19500
+  },
+  {
+    "id": 450,
+    "precioCab": 1,
+    "codigo": "80982",
+    "precio": 26500
+  },
+  {
+    "id": 451,
+    "precioCab": 1,
+    "codigo": "91235",
+    "precio": 41100
+  },
+  {
+    "id": 452,
+    "precioCab": 1,
+    "codigo": "8020",
+    "precio": 35000
+  },
+  {
+    "id": 453,
+    "precioCab": 1,
+    "codigo": "7891962060460",
+    "precio": 7900
+  },
+  {
+    "id": 454,
+    "precioCab": 1,
+    "codigo": "7891962060477",
+    "precio": 7900
+  },
+  {
+    "id": 455,
+    "precioCab": 1,
+    "codigo": "7891962055947",
+    "precio": 0
+  },
+  {
+    "id": 456,
+    "precioCab": 1,
+    "codigo": "7840131004491",
+    "precio": 11000
+  },
+  {
+    "id": 457,
+    "precioCab": 1,
+    "codigo": "7896064203586",
+    "precio": 9900
+  },
+  {
+    "id": 458,
+    "precioCab": 1,
+    "codigo": "7896064203579",
+    "precio": 9900
+  },
+  {
+    "id": 459,
+    "precioCab": 1,
+    "codigo": "7896064205245",
+    "precio": 9900
+  },
+  {
+    "id": 460,
+    "precioCab": 1,
+    "codigo": "7898115900048",
+    "precio": 0
+  },
+  {
+    "id": 461,
+    "precioCab": 1,
+    "codigo": "7898115900017",
+    "precio": 0
+  },
+  {
+    "id": 462,
+    "precioCab": 1,
+    "codigo": "7841854000401",
+    "precio": 22450
+  },
+  {
+    "id": 463,
+    "precioCab": 1,
+    "codigo": "7840047000020",
+    "precio": 8650
+  },
+  {
+    "id": 464,
+    "precioCab": 1,
+    "codigo": "7840047000013",
+    "precio": 15300
+  },
+  {
+    "id": 465,
+    "precioCab": 1,
+    "codigo": "7841503001551",
+    "precio": 10900
+  },
+  {
+    "id": 466,
+    "precioCab": 1,
+    "codigo": "7841503001568",
+    "precio": 5900
+  },
+  {
+    "id": 467,
+    "precioCab": 1,
+    "codigo": "9112221307200",
+    "precio": 35650
+  },
+  {
+    "id": 468,
+    "precioCab": 1,
+    "codigo": "7841282000011",
+    "precio": 6900
+  },
+  {
+    "id": 469,
+    "precioCab": 1,
+    "codigo": "7840581003006",
+    "precio": 19200
+  },
+  {
+    "id": 470,
+    "precioCab": 1,
+    "codigo": "7793890259490",
+    "precio": 10500
+  },
+  {
+    "id": 471,
+    "precioCab": 1,
+    "codigo": "7793890260847",
+    "precio": 5800
+  },
+  {
+    "id": 472,
+    "precioCab": 1,
+    "codigo": "50254",
+    "precio": 7000
+  },
+  {
+    "id": 473,
+    "precioCab": 1,
+    "codigo": "8794",
+    "precio": 17900
+  },
+  {
+    "id": 474,
+    "precioCab": 1,
+    "codigo": "8554",
+    "precio": 49950
+  },
+  {
+    "id": 475,
+    "precioCab": 1,
+    "codigo": "80985",
+    "precio": 47500
+  },
+  {
+    "id": 476,
+    "precioCab": 1,
+    "codigo": "50244",
+    "precio": 16500
+  },
+  {
+    "id": 477,
+    "precioCab": 1,
+    "codigo": "80623",
+    "precio": 11600
+  },
+  {
+    "id": 478,
+    "precioCab": 1,
+    "codigo": "80624",
+    "precio": 11000
+  },
+  {
+    "id": 479,
+    "precioCab": 1,
+    "codigo": "80998",
+    "precio": 9000
+  },
+  {
+    "id": 480,
+    "precioCab": 1,
+    "codigo": "8028",
+    "precio": 6500
+  },
+  {
+    "id": 481,
+    "precioCab": 1,
+    "codigo": "99835",
+    "precio": 7500
+  },
+  {
+    "id": 482,
+    "precioCab": 1,
+    "codigo": "9304",
+    "precio": 7000
+  },
+  {
+    "id": 483,
+    "precioCab": 1,
+    "codigo": "80612",
+    "precio": 7500
+  },
+  {
+    "id": 484,
+    "precioCab": 1,
+    "codigo": "9305",
+    "precio": 9500
+  },
+  {
+    "id": 485,
+    "precioCab": 1,
+    "codigo": "8562",
+    "precio": 7000
+  },
+  {
+    "id": 486,
+    "precioCab": 1,
+    "codigo": "9307",
+    "precio": 8000
+  },
+  {
+    "id": 487,
+    "precioCab": 1,
+    "codigo": "80641",
+    "precio": 9000
+  },
+  {
+    "id": 488,
+    "precioCab": 1,
+    "codigo": "80966",
+    "precio": 7000
+  },
+  {
+    "id": 489,
+    "precioCab": 1,
+    "codigo": "80212",
+    "precio": 7500
+  },
+  {
+    "id": 490,
+    "precioCab": 1,
+    "codigo": "82334",
+    "precio": 6500
+  },
+  {
+    "id": 491,
+    "precioCab": 1,
+    "codigo": "8029",
+    "precio": 6500
+  },
+  {
+    "id": 492,
+    "precioCab": 1,
+    "codigo": "7840113102054",
+    "precio": 8750
+  },
+  {
+    "id": 493,
+    "precioCab": 1,
+    "codigo": "7840113102023",
+    "precio": 6000
+  },
+  {
+    "id": 494,
+    "precioCab": 1,
+    "codigo": "7840113102016",
+    "precio": 7550
+  },
+  {
+    "id": 495,
+    "precioCab": 1,
+    "codigo": "7840113102047",
+    "precio": 10700
+  },
+  {
+    "id": 496,
+    "precioCab": 1,
+    "codigo": "7840113103037",
+    "precio": 9650
+  },
+  {
+    "id": 497,
+    "precioCab": 1,
+    "codigo": "7840113103013",
+    "precio": 9650
+  },
+  {
+    "id": 498,
+    "precioCab": 1,
+    "codigo": "7840113101026",
+    "precio": 10650
+  },
+  {
+    "id": 499,
+    "precioCab": 1,
+    "codigo": "7840113101071",
+    "precio": 10650
+  },
+  {
+    "id": 500,
+    "precioCab": 1,
+    "codigo": "5256067",
+    "precio": 8700
+  },
+  {
+    "id": 501,
+    "precioCab": 1,
+    "codigo": "7840113101064",
+    "precio": 6450
+  },
+  {
+    "id": 502,
+    "precioCab": 1,
+    "codigo": "7840113201092",
+    "precio": 30250
+  },
+  {
+    "id": 503,
+    "precioCab": 1,
+    "codigo": "7791664001276",
+    "precio": 20050
+  },
+  {
+    "id": 504,
+    "precioCab": 1,
+    "codigo": "7791664001283",
+    "precio": 8150
+  },
+  {
+    "id": 505,
+    "precioCab": 1,
+    "codigo": "7791664001252",
+    "precio": 0
+  },
+  {
+    "id": 506,
+    "precioCab": 1,
+    "codigo": "7791652000823",
+    "precio": 45400
+  },
+  {
+    "id": 507,
+    "precioCab": 1,
+    "codigo": "7791652000281",
+    "precio": 45400
+  },
+  {
+    "id": 508,
+    "precioCab": 1,
+    "codigo": "7791652022054",
+    "precio": 45400
+  },
+  {
+    "id": 509,
+    "precioCab": 1,
+    "codigo": "7840821002868",
+    "precio": 0
+  },
+  {
+    "id": 510,
+    "precioCab": 1,
+    "codigo": "7840821002844",
+    "precio": 0
+  },
+  {
+    "id": 511,
+    "precioCab": 1,
+    "codigo": "7840821002851",
+    "precio": 0
+  },
+  {
+    "id": 512,
+    "precioCab": 1,
+    "codigo": "9900011187473",
+    "precio": 5500
+  },
+  {
+    "id": 513,
+    "precioCab": 1,
+    "codigo": "9900011187503",
+    "precio": 4850
+  },
+  {
+    "id": 514,
+    "precioCab": 1,
+    "codigo": "9900011187497",
+    "precio": 6000
+  },
+  {
+    "id": 515,
+    "precioCab": 1,
+    "codigo": "9900011184625",
+    "precio": 16000
+  },
+  {
+    "id": 516,
+    "precioCab": 1,
+    "codigo": "9900011184571",
+    "precio": 11500
+  },
+  {
+    "id": 517,
+    "precioCab": 1,
+    "codigo": "9900011184588",
+    "precio": 14000
+  },
+  {
+    "id": 518,
+    "precioCab": 1,
+    "codigo": "9900011184656",
+    "precio": 16500
+  },
+  {
+    "id": 519,
+    "precioCab": 1,
+    "codigo": "9900011185660",
+    "precio": 7700
+  },
+  {
+    "id": 520,
+    "precioCab": 1,
+    "codigo": "9900011220279",
+    "precio": 9000
+  },
+  {
+    "id": 521,
+    "precioCab": 1,
+    "codigo": "7896040802970",
+    "precio": 9100
+  },
+  {
+    "id": 522,
+    "precioCab": 1,
+    "codigo": "7896040802994",
+    "precio": 9700
+  },
+  {
+    "id": 523,
+    "precioCab": 1,
+    "codigo": "7896040802963",
+    "precio": 6100
+  },
+  {
+    "id": 524,
+    "precioCab": 1,
+    "codigo": "7840263018106",
+    "precio": 6100
+  },
+  {
+    "id": 525,
+    "precioCab": 1,
+    "codigo": "7840263018113",
+    "precio": 7000
+  },
+  {
+    "id": 526,
+    "precioCab": 1,
+    "codigo": "7840263018175",
+    "precio": 11500
+  },
+  {
+    "id": 527,
+    "precioCab": 1,
+    "codigo": "9900011255752",
+    "precio": 12000
+  },
+  {
+    "id": 528,
+    "precioCab": 1,
+    "codigo": "9900011255745",
+    "precio": 12000
+  },
+  {
+    "id": 529,
+    "precioCab": 1,
+    "codigo": "9900011255783",
+    "precio": 15000
+  },
+  {
+    "id": 530,
+    "precioCab": 1,
+    "codigo": "9900011255738",
+    "precio": 18000
+  },
+  {
+    "id": 531,
+    "precioCab": 1,
+    "codigo": "9900011255776",
+    "precio": 20000
+  },
+  {
+    "id": 532,
+    "precioCab": 1,
+    "codigo": "9053",
+    "precio": 5120
+  },
+  {
+    "id": 533,
+    "precioCab": 1,
+    "codigo": "9091",
+    "precio": 4250
+  },
+  {
+    "id": 534,
+    "precioCab": 1,
+    "codigo": "9025",
+    "precio": 6550
+  },
+  {
+    "id": 535,
+    "precioCab": 1,
+    "codigo": "60758",
+    "precio": 3550
+  },
+  {
+    "id": 536,
+    "precioCab": 1,
+    "codigo": "90411",
+    "precio": 3550
+  }
+]
