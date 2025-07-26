@@ -1,64 +1,62 @@
-
 [
   {
     "id": 1,
     "descripcion": "ALMACEN",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 2,
     "descripcion": "BAZAR",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 3,
     "descripcion": "CARNICERIA",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 4,
     "descripcion": "CONFITERIA",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 5,
     "descripcion": "FRUTAS Y VERDURAS",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 6,
     "descripcion": "LACTEOS",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 7,
     "descripcion": "PANADERIA",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 8,
     "descripcion": "ROTISERIA",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 9,
     "descripcion": "PASTAS FRESCAS",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 10,
     "descripcion": "COTILLON",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 11,
     "descripcion": "PROMOCIONES",
-    "visible":1 
+    "visible": 1
   },
   {
     "id": 12,
-    "descripcion": "BARNER",
-    "visible":1 
+    "descripcion": "BARNER 1",
+    "visible": 1
   }
-  
 ]

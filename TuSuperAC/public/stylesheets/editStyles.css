@@ -1,0 +1,38 @@
+   body {
+      /* background-color: #f8f9fa; */
+    }
+
+    .accordion-button {
+      background-color: #001F3F;
+      color: white;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #FFD700;
+      color: #001F3F;
+    }
+
+    .accordion-body {
+      background-color: #001F3F;
+      color: white;
+    }
+
+    .btn-custom {
+      background-color: #FFD700;
+      color: #001F3F;
+      border: none;
+    }
+
+    table input {
+      background: transparent;
+      border: none;
+      color: white;
+    }
+
+    table input:disabled {
+      color: #adb5bd;
+    }
+
+    hr {
+      border-top: 1px solid #FFD700;
+    }

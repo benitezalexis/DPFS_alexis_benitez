@@ -5933,11 +5933,12 @@
     "codCategoria": 11,
     "codSubCategoria": 39,
     "codigo": "90411",
-    "descripcion": "LOCOTE ROJO BRASIL X KG.",
+    "descripcion": "LOCOTE ROJO BRASIL X KG",
     "tipo": "Kl",
     "stock_actual": 100,
     "stock_minimo": 10,
-    "visible": 1
+    "visible": 1,
+    "precio": 3550
   },
   {
     "id": 541,

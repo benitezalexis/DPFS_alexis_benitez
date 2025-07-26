@@ -1,0 +1,67 @@
+<%- include('../partials/head') %>
+  <link rel="stylesheet" href="/stylesheets/editStyles.css">
+
+  <body>
+
+    <%- include('../partials/navBar') %>
+
+      <main style="margin-top: 113px;">
+        <div class="container py-4">
+          <div class="accordion" id="accordionGeneral">
+
+            <!-- SUBSECCIONES -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSubsecciones">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSubsecciones" aria-expanded="true" aria-controls="collapseSubsecciones">
+                  Subsecciones
+                </button>
+              </h2>
+              <div id="collapseSubsecciones" class="accordion-collapse collapse show"
+                aria-labelledby="headingSubsecciones">
+                <div class="accordion-body">
+
+                  <div class="row mb-3">
+                    <div class="col-md-9">
+                      <input type="text" id="busquedaSubseccion" class="form-control"
+                        placeholder="Buscar por ID o descripción...">
+                    </div>
+                    <div class="col-md-3">
+                      <button class="btn btn-custom w-100 btnSubBusquedaSeccion"
+                        onclick="buscarSubsecciones()">Buscar</button>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-dark align-middle">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Sección</th>
+                          <th>Descripción</th>
+                          <th>Visible</th>
+                          <th>Opciones</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tablaSubsecciones"></tbody>
+                    </table>
+                  </div>
+
+                  <div class="d-flex justify-content-end mt-3">
+                    <button class="btn btn-custom me-2" onclick="crearSubseccion()">Crear</button>
+                    <button class="btn btn-custom" onclick="guardarSubsecciones()">Guardar</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </main>
+      <script src="/javascripts/products/editSubCategory.js"></script>
+      <%- include('../partials/footer') %>

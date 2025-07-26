@@ -17,8 +17,13 @@ let logoutRouter = require('./routes/logout');
 let logoutAdmin = require('./routes/logoutAdmin');
 let productRouter = require('./routes/product');
 let subCategoryRouter = require('./routes/subCategory');
-
+let editCategory = require('./routes/editCategory');
+let editSubCategory = require('./routes/editSubCategory');
+let editProduct = require('./routes/editProduct');
+const cors = require('cors');
 var app = express();
+
+app.use(cors());
 
 
 // view engine setup
@@ -66,6 +71,9 @@ app.use('/logoutAdmin', logoutAdmin);
 app.use('/products', productRouter);
 app.use('/category', categoryRouter);
 app.use('/subCategory', subCategoryRouter);
+app.use('/ediCategory', editCategory);
+app.use('/ediSubCategory', editSubCategory);
+app.use('/editProduct', editProduct);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

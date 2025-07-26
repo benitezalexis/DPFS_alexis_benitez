@@ -1,0 +1,66 @@
+ <%- include('../partials/head') %>
+<link rel="stylesheet" href="/stylesheets/editStyles.css">
+<body>
+
+ <%- include('../partials/navBar') %>
+
+  <main style="margin-top: 113px;">
+ <div class="container py-4">
+    <div class="accordion" id="accordionGeneral">
+      <div class="accordion" id="accordionSecciones">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSecciones">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecciones"
+              aria-expanded="true" aria-controls="collapseSecciones">
+              Secciones
+            </button>
+          </h2>
+          <div id="collapseSecciones" class="accordion-collapse collapse show" aria-labelledby="headingSecciones">
+            <div class="accordion-body">
+
+              <!-- Buscador -->
+              <div class="row mb-3">
+                <div class="col-md-9">
+                  <input type="text" id="busquedaSeccion" class="form-control"
+                    placeholder="Buscar por ID o descripción...">
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-custom w-100 btnBusquedaSeccion" onclick="buscarSecciones()">Buscar</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <!-- Tabla -->
+              <div class="table-responsive">
+                <table class="table table-bordered table-dark align-middle">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Descripción</th>
+                      <th>Visible</th>
+                      <th>Opciones</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaSecciones">
+                    <!-- Filas cargadas dinámicamente -->
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Botones inferiores -->
+              <div class="d-flex justify-content-end mt-3">
+                <button class="btn btn-custom me-2" onclick="crearSeccion()">Crear</button>
+                <button class="btn btn-custom" onclick="guardarSecciones()">Guardar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </main>
+  <script src="/javascripts/products/editCategory.js"></script>
+ <%- include('../partials/footer') %>

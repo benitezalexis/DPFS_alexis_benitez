@@ -108,22 +108,31 @@ showByDescription: (req, res) => {
     return res.status(400).json({ error: 'Falta el parámetro "busqueda"' });
   }
 
-  const subCategorias = readData();
+  const subCategorias = readData(); // Array de subcategorías
   const termino = busqueda.toLowerCase();
 
+  // Filtrar subcategorías
   const resultados = subCategorias
     .filter(p =>
       p.descripcion?.toLowerCase().includes(termino) ||
       p.id?.toString().toLowerCase().includes(termino)
     )
-    .slice(0, 10); // Limita a máximo 10 resultados
+    .slice(0, 10) // Limitar a 10 resultados
+    .map(p => {
+      const categoria = categorias.find(c => c.id === p.codCategoria);
+      return {
+        ...p,
+        descripcionCategoria: categoria ? categoria.descripcion : null
+      };
+    });
 
   if (resultados.length === 0) {
-    return res.status(404).json({ mensaje: 'No se encontraron subCategorias' });
+    return res.status(404).json({ mensaje: 'No se encontraron subcategorías' });
   }
 
   res.json(resultados);
 }
+
   ,
 
 }
