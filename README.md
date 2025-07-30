@@ -80,3 +80,8 @@ El acceso para administradores está separado del login principal para evitar qu
 Para ingresar como administrador, se debe utilizar el siguiente endpoint:
 
 http://localhost:3000/loginAdmin
+
+
+## 📅 Alcance
+
+El sistema no tiene en cuenta aun cobros de pedidos
