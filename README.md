@@ -32,6 +32,42 @@ Soy Alexis Benitez, estudiante de desarrollo Full Stack. Me apasiona crear soluc
    - Excelente usabilidad móvil y carrito inteligente.
 5. **https://cornershopapp.com/**
    - Proceso de checkout y experiencia de usuario muy fluida.
-
+   - 
 Estos sitios fueron seleccionados por su buena estética, funcionalidades, y su similitud con el tipo de e-commerce que quiero desarrollar.
+## 🚀 Cómo instalar y correr los proyectos
 
+### 1️⃣ Crear la base de datos
+
+Antes de instalar los proyectos, es necesario tener **MySQL** corriendo en tu máquina o servidor.
+
+1. Descargar el script tusuperac.sql de la carpeta db:
+
+Se debe crear una db llamada "tusuperac"
+
+📌 Nota: Si deseas usar otro nombre para la bases de datos, recordá cambiarlo en el archivo de configuración de Sequelize (/config/config.js o /config/database.js según tu estructura).
+2️⃣ Descargar los proyectos
+Cloná o descargá los dos proyectos desde tu repositorio o fuente:
+
+🛒 TuSuperAC → Proyecto e-commerce backend y frontend MVC con Express Generator.
+
+📊 reactDashboard → Proyecto de dashboard administrativo en React.
+
+3️⃣ Instalar dependencias
+Entrá en cada carpeta del proyecto y ejecutá:
+`npm install` 
+
+Ejemplo
+
+`cd TuSuperAC`
+
+`npm install`
+
+`cd ../reactDashboard`
+
+`npm install` 
+
+
+4️⃣ Ejecutar los proyectos
+Dentro de cada carpeta, ejecutá:
+
+`npm run dev`
