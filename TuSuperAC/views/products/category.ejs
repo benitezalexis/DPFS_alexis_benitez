@@ -1,11 +1,150 @@
- <%- include('../partials/head') %>
+<%- include('../partials/head') %>
 
 <body>
+<%- include('../partials/navBar') %>
+<style>
+  .subcat-item.active {
+    background-color: #e2e6ea; /* un gris suave, podés ajustarlo */
+    font-weight: bold;
+  }
+</style>
 
- <%- include('../partials/navBar') %>
+<main class="container py-3" style="margin-top: 113px;margin-left: 10px;">
+  <div class="row">
+    <!-- MENÚ IZQUIERDO -->
+    <div class="col-md-3">
+      <div class="position-sticky" style="top: 120px;"> <!-- Ajusta según tu navbar -->
+        <!-- <h5 class="mb-3">Categorías</h5> -->
+        <div class="accordion" id="menuCategorias">
+          <!-- Aquí se insertarán dinámicamente las categorías y subcategorías -->
+        </div>
+      </div>
+    </div>
 
-  <main style="margin-top: 113px;">
-    <h2>Categorias de productos</h2>
-  </main>
+    <!-- PRODUCTOS A LA DERECHA -->
+    <div class="col-md-9">
+      <div id="contenedorProductos">
+        <div class="row g-4">
+          <!-- Aquí se insertarán dinámicamente los productos -->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
- <%- include('../partials/footer') %>
+
+  <script>
+    let cantidad = 0.100;
+
+    function incrementarCantidad() {
+      cantidad += 0.100;
+      actualizarInput();
+    }
+
+    function decrementarCantidad() {
+      if (cantidad > 0.100) {
+        cantidad -= 0.100;
+        actualizarInput();
+      }
+    }
+
+    function actualizarInput() {
+      document.getElementById('inputCantidad').value = cantidad.toFixed(3);
+    }
+  </script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const urlCategorias = 'http://localhost:3000/products/categoriasConSubcategorias';
+  const urlProductos = 'http://localhost:3000/products/productosFiltrados';
+
+  const menu = document.getElementById('menuCategorias');
+  const contenedorProductos = document.querySelector('#contenedorProductos .row');
+
+  // 1. Cargar categorías y subcategorías
+  fetch(urlCategorias)
+    .then(response => response.json())
+    .then(data => {
+      data.forEach((categoria, index) => {
+        const accordionItem = document.createElement('div');
+        accordionItem.className = 'accordion-item';
+
+        accordionItem.innerHTML = `
+          <h2 class="accordion-header" id="heading${index}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}">
+              ${categoria.descripcion}
+            </button>
+          </h2>
+          <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#menuCategorias">
+            <div class="accordion-body p-1">
+              <ul class="list-group list-group-flush">
+                ${categoria.subCategorias.map(sub => `
+                  <li class="list-group-item subcat-item" 
+                      data-categoria="${categoria.idCategoria}" 
+                      data-subcategoria="${sub.id}" style="cursor: pointer;">
+                    <a href="#" class="text-decoration-none" style="color:black">${sub.descripcion}</a>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+          </div>
+        `;
+
+        menu.appendChild(accordionItem);
+      });
+
+      // 2. Escuchar clics en las subcategorías
+    document.querySelectorAll('.subcat-item').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+
+    // 🔁 Quitar clase activa de todos
+    document.querySelectorAll('.subcat-item').forEach(i => i.classList.remove('active'));
+
+    // ✅ Marcar este item como activo
+    item.classList.add('active');
+
+    const categoria = item.getAttribute('data-categoria');
+    const subcategoria = item.getAttribute('data-subcategoria');
+
+    fetch(`${urlProductos}?categoria=${categoria}&subcategoria=${subcategoria}`)
+      .then(res => res.json())
+      .then(productos => {
+        contenedorProductos.innerHTML = '';
+
+        productos.forEach(prod => {
+          const col = document.createElement('div');
+          col.className = 'col-sm-6 col-md-4 col-lg-4';
+          col.innerHTML = `
+            <div class="card h-100 d-flex flex-column">
+              <img src="https://arete.com.py/userfiles/images/productos/224/${prod.codigo}.jpg" class="card-img-top" alt="${prod.descripcion}">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title text-uppercase descProduct" data-codigo="${prod.codigo}">${prod.descripcion}</h5>
+                <p class="card-text fw-bold precioProductTipo">
+                  <span class="precioProduct">${prod.precio.toLocaleString()}</span> Gs
+                </p>
+                <div style="display: none;" class="ivaItem" data-iva="10"></div>
+
+                <div class="input-group mb-3">
+                  <button class="btn btn-warning restarItem" type="button"><i class="bi bi-dash-lg"></i></button>
+                  <input type="text" class="form-control text-center" value="1.000" readonly>
+                  <input type="text" class="form-control text-center bg-light tipoItem" value="${prod.tipo}" disabled>
+                  <button class="btn btn-warning agregarItem" type="button"><i class="bi bi-plus-lg"></i></button>
+                </div>
+
+                <button class="btn btn-primary w-100 agregarCarritoItem mb-2">Agregar Carrito <i class="bi bi-cart me-2"></i></button>
+                <a href="/productDetail/cod/${prod.codigo}" class="btn btn-primary w-100">Ver más</a>
+              </div>
+            </div>
+          `;
+
+          contenedorProductos.appendChild(col);
+        });
+      });
+  });
+});
+ });
+});
+</script>
+
+<%- include('../partials/footer') %>

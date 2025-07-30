@@ -1,141 +1,133 @@
-
-const fs = require('fs');
-const path = require('path');
-
-const filePath = path.join(__dirname, '../data/subCategorias.json');
-const categorias = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/categorias.json'), 'utf-8'));
-
-// Función para leer el archivo
-const readData = () => {
-  const jsonData = fs.readFileSync(filePath, 'utf-8');
-  return JSON.parse(jsonData);
-};
-
-// Función para guardar datos
-const writeData = (data) => {
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
-};
-
+const db = require('../models');
+const SubCategoria = db.subcategorias;
+const Categoria = db.categorias;
 
 let subCategoriaController = {
- // GET /
-index: (req, res) => {
-  const productos = readData();
+  // GET /
+  index: async (req, res) => {
+    try {
+      const subCategorias = await SubCategoria.findAll();
+      // Agregar descripción de categoría
+      const categorias = await Categoria.findAll();
 
-  const productosConCategorias = productos.map(producto => {
-    const categoria = categorias.find(c => c.id === producto.codCategoria);
+      const resultado = subCategorias.map(sc => {
+        const cat = categorias.find(c => c.id === sc.codCategoria);
+        return {
+          ...sc.toJSON(),
+          descripcionCategoria: cat ? cat.descripcion : null
+        };
+      });
 
-    return {
-      ...producto,
-      descripcionCategoria: categoria ? categoria.descripcion : null,
-  
-    };
-  });
-
-  res.json(productosConCategorias);
-},
-
+      res.json(resultado);
+    } catch (error) {
+      res.status(500).json({ error: 'Error al obtener subcategorías', detalle: error.message });
+    }
+  },
 
   // GET /id/:id
-show: (req, res) => {
-  const id = parseInt(req.params.id);
-  const productos = readData();
-  const producto = productos.find(p => p.id == id);
+  show: async (req, res) => {
+    const id = parseInt(req.params.id);
+    try {
+      const subCategoria = await SubCategoria.findByPk(id);
+      if (!subCategoria) {
+        return res.status(404).json({ error: 'Subcategoría no encontrada' });
+      }
 
-  if (!producto) {
-    return res.status(404).json({ error: 'Producto no encontrado' });
-  }
-
-  const categoria = categorias.find(c => c.id === producto.codCategoria);
-  
-  res.json({
-    ...producto,
-    descripcionCategoria: categoria ? categoria.descripcion : null,
-  });
-},
-
+      const categoria = await Categoria.findByPk(subCategoria.codCategoria);
+      res.json({
+        ...subCategoria.toJSON(),
+        descripcionCategoria: categoria ? categoria.descripcion : null
+      });
+    } catch (error) {
+      res.status(500).json({ error: 'Error al buscar subcategoría', detalle: error.message });
+    }
+  },
 
   // POST /create
-  store: (req, res) => {
-    const subCategorias = readData();
-    const nuevoId = subCategorias.length > 0 ? subCategorias[subCategorias.length - 1].id + 1 : 1;
-
-    const nuevo = {
-      id: nuevoId,
-      ...req.body
-    };
-
-    subCategorias.push(nuevo);
-    writeData(subCategorias);
-    res.status(201).json(nuevo);
+  store: async (req, res) => {
+    try {
+      const nuevaSubCategoria = await SubCategoria.create(req.body);
+      res.status(201).json(nuevaSubCategoria);
+    } catch (error) {
+      res.status(500).json({ error: 'Error al crear subcategoría', detalle: error.message });
+    }
   },
 
   // PUT /id/:id
-  update: (req, res) => {
+  update: async (req, res) => {
     const id = parseInt(req.params.id);
-    const subCategorias = readData();
-    const index = subCategorias.findIndex(p => p.id == id);
+    try {
+      const subCategoria = await SubCategoria.findByPk(id);
+      if (!subCategoria) {
+        return res.status(404).json({ error: 'Subcategoría no encontrada' });
+      }
 
-    if (index === -1) {
-      return res.status(404).json({ error: 'categoria no encontrado' });
+      await subCategoria.update(req.body);
+      res.json(subCategoria);
+    } catch (error) {
+      res.status(500).json({ error: 'Error al actualizar subcategoría', detalle: error.message });
     }
-
-    subCategorias[index] = { ...subCategorias[index], ...req.body };
-    writeData(subCategorias);
-    res.json(subCategorias[index]);
   },
 
   // DELETE /id/:id
-  destroy: (req, res) => {
+  destroy: async (req, res) => {
     const id = parseInt(req.params.id);
-    let subCategorias = readData();
-    const index = subCategorias.findIndex(p => p.id === id);
+    try {
+      const subCategoria = await SubCategoria.findByPk(id);
+      if (!subCategoria) {
+        return res.status(404).json({ error: 'Subcategoría no encontrada' });
+      }
 
-    if (index === -1) {
-      return res.status(404).json({ error: 'categoria no encontrado' });
+      await subCategoria.destroy();
+      res.json({ mensaje: 'Subcategoría eliminada', subCategoria });
+    } catch (error) {
+      res.status(500).json({ error: 'Error al eliminar subcategoría', detalle: error.message });
+    }
+  },
+
+  // GET /search?busqueda=algo
+  showByDescription: async (req, res) => {
+    const { busqueda } = req.query;
+    if (!busqueda) {
+      return res.status(400).json({ error: 'Falta el parámetro "busqueda"' });
     }
 
-    const eliminado = subCategorias.splice(index, 1)[0];
-    writeData(subCategorias);
-    res.json({ mensaje: 'categoria eliminado', categoria: eliminado });
-  },
-  
-// GET /search?busqueda=arroz
-showByDescription: (req, res) => {
-  const { busqueda } = req.query;
+    try {
+      const resultados = await SubCategoria.findAll({
+        where: db.Sequelize.or(
+          db.Sequelize.where(
+            db.Sequelize.fn('LOWER', db.Sequelize.col('descripcion')),
+            'LIKE',
+            `%${busqueda.toLowerCase()}%`
+          ),
+          db.Sequelize.where(
+            db.Sequelize.cast(db.Sequelize.col('id'), 'CHAR'),
+            'LIKE',
+            `%${busqueda}%`
+          )
+        ),
+        limit: 10
+      });
 
-  if (!busqueda) {
-    return res.status(400).json({ error: 'Falta el parámetro "busqueda"' });
+      if (resultados.length === 0) {
+        return res.status(404).json({ mensaje: 'No se encontraron subcategorías' });
+      }
+
+      // Agregar descripcionCategoria
+      const categorias = await Categoria.findAll();
+      const resultadosConCategoria = resultados.map(sc => {
+        const cat = categorias.find(c => c.id === sc.codCategoria);
+        return {
+          ...sc.toJSON(),
+          descripcionCategoria: cat ? cat.descripcion : null
+        };
+      });
+
+      res.json(resultadosConCategoria);
+    } catch (error) {
+      res.status(500).json({ error: 'Error en la búsqueda', detalle: error.message });
+    }
   }
+};
 
-  const subCategorias = readData(); // Array de subcategorías
-  const termino = busqueda.toLowerCase();
-
-  // Filtrar subcategorías
-  const resultados = subCategorias
-    .filter(p =>
-      p.descripcion?.toLowerCase().includes(termino) ||
-      p.id?.toString().toLowerCase().includes(termino)
-    )
-    .slice(0, 10) // Limitar a 10 resultados
-    .map(p => {
-      const categoria = categorias.find(c => c.id === p.codCategoria);
-      return {
-        ...p,
-        descripcionCategoria: categoria ? categoria.descripcion : null
-      };
-    });
-
-  if (resultados.length === 0) {
-    return res.status(404).json({ mensaje: 'No se encontraron subcategorías' });
-  }
-
-  res.json(resultados);
-}
-
-  ,
-
-}
-
-
-module.exports = subCategoriaController
+module.exports = subCategoriaController;

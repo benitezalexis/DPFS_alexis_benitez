@@ -1,112 +1,28 @@
 [
   {
-    "cod_cliente": 3365896,
-    "nombre_cliente": "Juan Pérez",
-    "ruc_ci": 3365896,
-    "celular": "0981123456",
+    "cod_cliente": "3365896",
+    "nombre": "Juan Pérez",
+    "ruc_ci": "3365896",
+    "celular": "11111",
     "direccion": "Asunción, Paraguay",
-    "email": "juan.perez@example.com",
-    "password": "$2b$10$mZLj5lsT33IdgLHB9i7Y0eSHFm3tU03q8wBAnswckj5Pxq7Vq.a1m",
+    "email": "juan.perez@example45.com",
+    "password": "$2b$10$qbfPG6lLWa5R/6KxqMs7W.aSgcAenWqFWAbC0s7e806waZH3zeS4u",
+    "logo": "/images/clientesLogos/logo_3365896.png",
+    "tipo": "cliente",
     "fecha_creacion": "2025-06-25 21:00:00",
-    "fecha_modificacion": "2025-06-25 21:00:00"
+    "fecha_modificacion": "2025-07-28 21:27:19"
   },
   {
-    "cod_cliente": 2214587,
-    "nombre_cliente": "Ana Gómez",
-    "ruc_ci": 2214587,
+    "cod_cliente": "5582454",
+    "nombre": "Ana Gómez",
+    "ruc_ci": "5582454",
     "celular": "0981127890",
     "direccion": "San Lorenzo",
     "email": "ana.gomez@example.com",
-    "password": "abcd",
+    "password": "$2b$10$R7y69ns3jI15TS8ek5IeA.O0tG7NwpWLEloPFw7vTwerGOEloHXZC",
+    "logo": "images/clientesLogos/default.png",
+    "tipo": "cliente",
     "fecha_creacion": "2025-06-25 21:01:00",
     "fecha_modificacion": "2025-06-25 21:01:00"
-  },
-  {
-    "cod_cliente": 112544,
-    "nombre_cliente": "Carlos Rodríguez",
-    "ruc_ci": 112544,
-    "celular": "0981991122",
-    "direccion": "Lambaré",
-    "email": "carlos.rod@example.com",
-    "password": "carl123",
-    "fecha_creacion": "2025-06-25 21:02:00",
-    "fecha_modificacion": "2025-06-25 21:02:00"
-  },
-  {
-    "cod_cliente": 5544215,
-    "nombre_cliente": "María López",
-    "ruc_ci": 5544215,
-    "celular": "0981554433",
-    "direccion": "Fernando de la Mora",
-    "email": "maria.lopez@example.com",
-    "password": "mlop2025",
-    "fecha_creacion": "2025-06-25 21:03:00",
-    "fecha_modificacion": "2025-06-25 21:03:00"
-  },
-  {
-    "cod_cliente": 3325689,
-    "nombre_cliente": "Luis Fernández",
-    "ruc_ci": 3325689,
-    "celular": "0981778899",
-    "direccion": "Capiatá",
-    "email": "luis.fernandez@example.com",
-    "password": "luis2025",
-    "fecha_creacion": "2025-06-25 21:04:00",
-    "fecha_modificacion": "2025-06-25 21:04:00"
-  },
-  {
-    "cod_cliente": 4458255,
-    "nombre_cliente": "Diana Cabrera",
-    "ruc_ci": 4458255,
-    "celular": "0981887766",
-    "direccion": "Luque",
-    "email": "diana.cabrera@example.com",
-    "password": "dcab123",
-    "fecha_creacion": "2025-06-25 21:05:00",
-    "fecha_modificacion": "2025-06-25 21:05:00"
-  },
-  {
-    "cod_cliente": 6688545,
-    "nombre_cliente": "Mario Rivas",
-    "ruc_ci": 6688545,
-    "celular": "0981223344",
-    "direccion": "Villa Elisa",
-    "email": "mario.rivas@example.com",
-    "password": "mario321",
-    "fecha_creacion": "2025-06-25 21:06:00",
-    "fecha_modificacion": "2025-06-25 21:06:00"
-  },
-  {
-    "cod_cliente": 6548523,
-    "nombre_cliente": "Rocío Benítez",
-    "ruc_ci": 6548523,
-    "celular": "0981445566",
-    "direccion": "Ñemby",
-    "email": "rocio.benitez@example.com",
-    "password": "rb2025",
-    "fecha_creacion": "2025-06-25 21:07:00",
-    "fecha_modificacion": "2025-06-25 21:07:00"
-  },
-  {
-    "cod_cliente": 5544789,
-    "nombre_cliente": "Pedro Acosta",
-    "ruc_ci": 5544789,
-    "celular": "0981333666",
-    "direccion": "Mariano Roque Alonso",
-    "email": "pedro.acosta@example.com",
-    "password": "pa2025",
-    "fecha_creacion": "2025-06-25 21:08:00",
-    "fecha_modificacion": "2025-06-25 21:08:00"
-  },
-  {
-    "cod_cliente": 4457854,
-    "nombre_cliente": "Laura González",
-    "ruc_ci": 4457854,
-    "celular": "0981667788",
-    "direccion": "Limpio",
-    "email": "laura.gonzalez@example.com",
-    "password": "lg123456",
-    "fecha_creacion": "2025-06-25 21:09:00",
-    "fecha_modificacion": "2025-06-25 21:09:00"
   }
 ]

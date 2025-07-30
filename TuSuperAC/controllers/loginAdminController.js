@@ -1,35 +1,45 @@
-
-
-const fs = require('fs');
-const path = require('path');
 const bcrypt = require('bcryptjs');
-
-const USUARIOS_PATH = path.join(__dirname, '../data/usuarios.json');
+const db = require('../models');
+const Usuario = db.usuarios; // o el nombre exacto que exporta tu modelo de usuarios
 
 let loginController = {
   formLogin: function (req, res) {
     res.render('users/loginAdmin', { error: null });
   },
-  index: function (req, res) {
-   const { email, password } = req.body;
-  const usuarios = JSON.parse(fs.readFileSync(USUARIOS_PATH));
-  const admin = usuarios.find(u => u.correo === email);
 
-  if (!admin || !bcrypt.compareSync(password, admin.password)) {
-    return res.render('loginAdmin', { error: 'Usuario o contraseña inválidos' });
+  index: async function (req, res) {
+    const { email, password } = req.body;
+
+    try {
+      const admin = await Usuario.findOne({ where: { email } });
+
+      if (!admin) {
+        return res.render('users/loginAdmin', { error: 'Usuario o contraseña inválidos' });
+      }
+
+      const passwordCorrecta = bcrypt.compareSync(password, admin.password);
+
+      if (!passwordCorrecta) {
+        return res.render('users/loginAdmin', { error: 'Usuario o contraseña inválidos' });
+      }
+
+      req.session.admin = {
+        nombre: admin.nombre,
+        tipo: admin.tipo,
+        email: admin.email,
+        direccion: admin.direccion,
+        ruc_ci: admin.ruc_ci,
+        celular: admin.celular,
+        logo: admin.logo,
+      };
+
+      res.redirect('/'); // o la ruta de tu panel admin
+
+    } catch (error) {
+      console.error(error);
+      res.render('users/loginAdmin', { error: 'Error interno, intenta nuevamente.' });
+    }
   }
+};
 
-  req.session.admin = {
-    id: admin.id,
-    nombre: admin.nombre,
-    tipo: admin.tipo
-  };
-
-     res.redirect('/');// o donde tengas el panel admin
-
-  }
-
-}
-
-
-module.exports = loginController
+module.exports = loginController;

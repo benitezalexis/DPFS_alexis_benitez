@@ -31,7 +31,7 @@
         <!-- Menú -->
         <ul class="navbar-nav mx-lg-3 text-center text-lg-start">
           <li class="nav-item"><a class="nav-link px-2" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link px-2" href="/category">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="/categoryCard">Categorias</a></li>
           <li class="nav-item"><a class="nav-link px-2" href="/about">Sobre Nosotros</a></li>
         </ul>
 
@@ -39,14 +39,14 @@
         <!-- Icono de usuario y enlace a Login -->
         <div class="text-center mt-3 dropdown">
           <i class="bi bi-person-circle" style="color: black;font-size: 28px;"></i><br>
-
+          
           <% if (usuario) { %>
             <a class="dropdown-toggle text-decoration-none" href="#" role="button" id="menuUsuario"
               data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--azul-marino);">
               <%= usuario.nombre %>
             </a>
             <ul class="dropdown-menu" aria-labelledby="menuUsuario">
-              <li><a class="dropdown-item" href="/perfil">Mi perfil</a></li>
+              <li><a class="dropdown-item" href="/profile">Mi perfil</a></li>
               <li><a class="dropdown-item" href="/pedidos">Mis pedidos</a></li>
               <li>
                 <hr class="dropdown-divider">
@@ -59,7 +59,7 @@
               <%= admin.nombre %>
             </a>
             <ul class="dropdown-menu" aria-labelledby="menuUsuario">
-              <li><a class="dropdown-item" href="/perfil">Mi perfil</a></li>
+              <li><a class="dropdown-item" href="/profile">Mi perfil</a></li>
               <li><a class="dropdown-item" href="/ediCategory">Editar Secciones</a></li>
               <li><a class="dropdown-item" href="/ediSubCategory">Editar SubSecciones</a></li>
                  <li><a class="dropdown-item" href="/editProduct">Editar Productos</a></li>

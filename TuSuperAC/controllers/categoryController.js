@@ -1,113 +1,98 @@
-
-const fs = require('fs');
-const path = require('path');
-
-const filePath = path.join(__dirname, '../data/categorias.json');
-
-// Función para leer el archivo
-const readData = () => {
-  const jsonData = fs.readFileSync(filePath, 'utf-8');
-  return JSON.parse(jsonData);
-};
-
-// Función para guardar datos
-const writeData = (data) => {
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
-};
-
+const db = require('../models'); // Asegurate de tener un index.js que exporta los modelos
+const Categoria = db.categorias; // Modelo generado por sequelize-auto
 
 let categoriaController = {
- // GET /
-  index: (req, res) => {
-    const categorias = readData();
-    res.json(categorias);
+  // GET /
+  index: async (req, res) => {
+    try {
+      const categorias = await Categoria.findAll();
+      res.json(categorias);
+    } catch (error) {
+      res.status(500).json({ error: 'Error al obtener categorías', detalle: error.message });
+    }
   },
 
   // GET /id/:id
-  show: (req, res) => {
+  show: async (req, res) => {
     const id = parseInt(req.params.id);
-    const categorias = readData();
-    const categoria = categorias.find(p => p.id == id);
-
-    if (!categoria) {
-      return res.status(404).json({ error: 'categoria no encontrado' });
+    try {
+      const categoria = await Categoria.findByPk(id);
+      if (!categoria) {
+        return res.status(404).json({ error: 'Categoría no encontrada' });
+      }
+      res.json(categoria);
+    } catch (error) {
+      res.status(500).json({ error: 'Error al buscar categoría', detalle: error.message });
     }
-
-    res.json(categoria);
   },
 
   // POST /create
-  store: (req, res) => {
-    const categorias = readData();
-    const nuevoId = categorias.length > 0 ? categorias[categorias.length - 1].id + 1 : 1;
-
-    const nuevo = {
-      id: nuevoId,
-      ...req.body
-    };
-
-    categorias.push(nuevo);
-    writeData(categorias);
-    res.status(201).json(nuevo);
+  store: async (req, res) => {
+    try {
+      const nueva = await Categoria.create(req.body);
+      res.status(201).json(nueva);
+    } catch (error) {
+      res.status(500).json({ error: 'Error al crear categoría', detalle: error.message });
+    }
   },
 
   // PUT /id/:id
-  update: (req, res) => {
+  update: async (req, res) => {
     const id = parseInt(req.params.id);
-    const categorias = readData();
-    const index = categorias.findIndex(p => p.id == id);
+    try {
+      const categoria = await Categoria.findByPk(id);
+      if (!categoria) {
+        return res.status(404).json({ error: 'Categoría no encontrada' });
+      }
 
-    if (index === -1) {
-      return res.status(404).json({ error: 'categoria no encontrado' });
+      await categoria.update(req.body);
+      res.json(categoria);
+    } catch (error) {
+      res.status(500).json({ error: 'Error al actualizar categoría', detalle: error.message });
     }
-
-    categorias[index] = { ...categorias[index], ...req.body };
-    writeData(categorias);
-    res.json(categorias[index]);
   },
 
   // DELETE /id/:id
-  destroy: (req, res) => {
+  destroy: async (req, res) => {
     const id = parseInt(req.params.id);
-    let categorias = readData();
-    const index = categorias.findIndex(p => p.id === id);
+    try {
+      const categoria = await Categoria.findByPk(id);
+      if (!categoria) {
+        return res.status(404).json({ error: 'Categoría no encontrada' });
+      }
 
-    if (index === -1) {
-      return res.status(404).json({ error: 'categoria no encontrado' });
+      await categoria.destroy();
+      res.json({ mensaje: 'Categoría eliminada', categoria });
+    } catch (error) {
+      res.status(500).json({ error: 'Error al eliminar categoría', detalle: error.message });
+    }
+  },
+
+  // GET /search?busqueda=algo
+  showByDescription: async (req, res) => {
+    const { busqueda } = req.query;
+    if (!busqueda) {
+      return res.status(400).json({ error: 'Falta el parámetro "busqueda"' });
     }
 
-    const eliminado = categorias.splice(index, 1)[0];
-    writeData(categorias);
-    res.json({ mensaje: 'categoria eliminado', categoria: eliminado });
-  },
-  
-// GET /search?busqueda=arroz
-showByDescription: (req, res) => {
-  const { busqueda } = req.query;
+    try {
+      const resultados = await Categoria.findAll({
+        where: db.Sequelize.or(
+          db.Sequelize.where(db.Sequelize.fn('LOWER', db.Sequelize.col('descripcion')), 'LIKE', `%${busqueda.toLowerCase()}%`),
+          db.Sequelize.where(db.Sequelize.cast(db.Sequelize.col('id'), 'CHAR'), 'LIKE', `%${busqueda}%`)
+        ),
+        limit: 10
+      });
 
-  if (!busqueda) {
-    return res.status(400).json({ error: 'Falta el parámetro "busqueda"' });
+      if (resultados.length === 0) {
+        return res.status(404).json({ mensaje: 'No se encontraron categorías' });
+      }
+
+      res.json(resultados);
+    } catch (error) {
+      res.status(500).json({ error: 'Error en la búsqueda', detalle: error.message });
+    }
   }
+};
 
-  const productos = readData();
-  const termino = busqueda.toLowerCase();
-
-  const resultados = productos
-    .filter(p =>
-      p.descripcion?.toLowerCase().includes(termino) ||
-      p.id?.toString().toLowerCase().includes(termino)
-    )
-    .slice(0, 10); // Limita a máximo 10 resultados
-
-  if (resultados.length === 0) {
-    return res.status(404).json({ mensaje: 'No se encontraron productos' });
-  }
-
-  res.json(resultados);
-}
-  ,
-
-}
-
-
-module.exports = categoriaController
+module.exports = categoriaController;

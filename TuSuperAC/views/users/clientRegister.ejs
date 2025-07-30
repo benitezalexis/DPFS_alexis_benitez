@@ -1,0 +1,176 @@
+<%- include('../partials/head') %>
+
+<body>
+
+<%- include('../partials/navBar') %>
+<script src="./javascripts/validator.min.js"></script>
+<main style="margin-top: 113px;">
+  <div class="container d-flex justify-content-center align-items-center" style="min-height: 90vh;">
+    <div class="p-4 rounded border shadow bg-white" style="width: 100%; max-width: 500px;">
+
+      <h3 class="text-center mb-4" style="color: #001F3F;">REGISTRO</h3>
+
+      <form id="formRegistro">
+        <!-- Nombre -->
+        <div class="mb-3 position-relative">
+          <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+            <i class="bi bi-person"></i>
+          </span>
+          <input type="text" id="nombre" name="nombre" class="form-control ps-5 rounded-pill" placeholder="Nombre" required />
+          <div class="invalid-feedback" id="error-nombre"></div>
+        </div>
+
+        <!-- Cédula / RUC -->
+        <div class="mb-3 position-relative">
+          <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+            <i class="bi bi-card-text"></i>
+          </span>
+          <input type="text" id="ruc_ci" name="ruc_ci" class="form-control ps-5 rounded-pill" placeholder="Cédula / RUC" required />
+          <div class="invalid-feedback" id="error-ruc_ci"></div>
+        </div>
+
+        <!-- Dirección -->
+        <div class="mb-3 position-relative">
+          <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+            <i class="bi bi-geo-alt"></i>
+          </span>
+          <input type="text" id="direccion" name="direccion" class="form-control ps-5 rounded-pill" placeholder="Dirección" />
+          <div class="invalid-feedback" id="error-direccion"></div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3 position-relative">
+          <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+            <i class="bi bi-envelope"></i>
+          </span>
+          <input type="email" id="email" name="email" class="form-control ps-5 rounded-pill" placeholder="Correo electrónico" required />
+          <div class="invalid-feedback" id="error-email"></div>
+        </div>
+
+        <!-- Celular -->
+        <div class="mb-3 position-relative">
+          <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+            <i class="bi bi-phone"></i>
+          </span>
+          <input type="text" id="celular" name="celular" class="form-control ps-5 rounded-pill" placeholder="Celular" />
+          <div class="invalid-feedback" id="error-celular"></div>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="mb-4 position-relative">
+          <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
+            <i class="bi bi-lock"></i>
+          </span>
+          <input type="password" id="password" name="password" class="form-control ps-5 rounded-pill" placeholder="Contraseña" required />
+          <div class="invalid-feedback" id="error-password"></div>
+        </div>
+
+        <!-- Botón -->
+        <div class="d-grid">
+          <button type="submit" class="btn btn-dark rounded-1">Registrarse</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</main>
+<script>
+  document.getElementById('formRegistro').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+
+    const data = {
+      nombre: form.nombre.value.trim(),
+      email: form.email.value.trim(),
+      celular: form.celular.value.trim(),
+      ruc_ci: form.ruc_ci.value.trim(),
+      password: form.password.value,
+      direccion: form.direccion.value.trim(),
+    };
+
+    // Limpiar errores previos
+    ['nombre', 'email', 'celular', 'ruc_ci', 'password', 'direccion'].forEach(campo => {
+      const input = document.getElementById(campo);
+      const errorDiv = document.getElementById('error-' + campo);
+      input.classList.remove('is-invalid');
+      errorDiv.textContent = '';
+    });
+
+    // Validaciones con validator.js
+
+    if (!validator.isLength(data.nombre, { min: 2 })) {
+      mostrarError('nombre', 'El nombre debe tener al menos 2 caracteres');
+      return;
+    }
+
+    if (!validator.isEmail(data.email)) {
+      mostrarError('email', 'El email no es válido');
+      return;
+    }
+
+    if (!validator.isLength(data.password, { min: 8 })) {
+      mostrarError('password', 'La contraseña debe tener al menos 8 caracteres');
+      return;
+    }
+
+    if (!/[a-z]/.test(data.password)) {
+      mostrarError('password', 'La contraseña debe contener una letra minúscula');
+      return;
+    }
+
+    if (!/[A-Z]/.test(data.password)) {
+      mostrarError('password', 'La contraseña debe contener una letra mayúscula');
+      return;
+    }
+
+    if (!/\d/.test(data.password)) {
+      mostrarError('password', 'La contraseña debe contener un número');
+      return;
+    }
+
+    if (!/[^A-Za-z0-9]/.test(data.password)) {
+      mostrarError('password', 'La contraseña debe contener un carácter especial');
+      return;
+    }
+
+    // Si pasa validaciones, enviamos al backend
+    try {
+      const response = await fetch('/clientRegister/create', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert('✅ Cliente registrado correctamente');
+        form.reset();
+      } else if (result.errores) {
+        // Mostrar errores que vienen del backend
+        result.errores.forEach(error => {
+          mostrarError(error.param, error.msg);
+        });
+      } else {
+        alert('❌ Error: ' + (result.error || 'No se pudo registrar'));
+      }
+
+    } catch (err) {
+      console.error('Error al enviar formulario:', err);
+      alert('❌ Error inesperado al registrar');
+    }
+  });
+
+  function mostrarError(campo, mensaje) {
+    const input = document.getElementById(campo);
+    const errorDiv = document.getElementById('error-' + campo);
+    if (input && errorDiv) {
+      input.classList.add('is-invalid');
+      errorDiv.textContent = mensaje;
+      input.focus();
+    }
+  }
+</script>
+
+<%- include('../partials/footer') %>

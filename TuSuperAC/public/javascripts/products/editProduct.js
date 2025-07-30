@@ -136,8 +136,12 @@
               console.log(`✅ Se ha eliminado correctamente de ${tabla}`);
               row.remove();
             } else {
+                 if ((data.mensaje) ) {
+                alert("SubCategoria eliminada correctamente.");
+                row.remove();
+              }
               console.warn("❌ No se pudo eliminar:", data.error || data);
-              alert(`No se pudo eliminar: ${data.error || "Error desconocido"}`);
+              //alert(`No se pudo eliminar: ${data.error || "Error desconocido"}`);
             }
           })
           .catch(error => {
@@ -216,115 +220,132 @@
           alert("Error de red o servidor.");
         });
     }
-    function guardarProductos() {
-      const tbody = document.getElementById("tablaProductos");
-      const filas = tbody.querySelectorAll("tr");
-      const registrosProcesables = [];
+   function guardarProductos() {
+  const tbody = document.getElementById("tablaProductos");
+  const filas = tbody.querySelectorAll("tr");
+  const registrosProcesables = [];
 
-      filas.forEach(row => {
-        const seccionInput = row.querySelector(".listaSeccionesSecInp:not([disabled])");
-        if (!seccionInput) return;
+  filas.forEach(row => {
+    const seccionInput = row.querySelector(".listaSeccionesSecInp:not([disabled])");
+    if (!seccionInput) return;
 
-        const id = parseInt(row.querySelector(".idCard").value.trim(), 10);
-        const codigo = row.querySelector(".codigoInput")?.value.trim();
-        const categoriaTexto = row.querySelector(".listaSeccionesSecInp")?.value.trim();
-        const subCategoriaTexto = row.querySelector(".listaSubSeccionesSecInp")?.value.trim();
-        const descripcion = row.querySelector(".descripcionInput")?.value.trim();
-        const tipo = row.querySelector(".tipoSelect")?.value;
-        const precio = parseFloat(row.querySelector(".precioInput")?.value.trim()) || 0;
-        const visible = row.querySelector(".visibleCheck")?.checked ? 1 : 0;
+    const id = parseInt(row.querySelector(".idCard").value.trim(), 10);
+    const codigo = row.querySelector(".codigoInput")?.value.trim();
+    const categoriaTexto = row.querySelector(".listaSeccionesSecInp")?.value.trim();
+    const subCategoriaTexto = row.querySelector(".listaSubSeccionesSecInp")?.value.trim();
+    const descripcion = row.querySelector(".descripcionInput")?.value.trim();
+    const tipo = row.querySelector(".tipoSelect")?.value;
+    const precio = parseFloat(row.querySelector(".precioInput")?.value.trim()) || 0;
+    const visible = row.querySelector(".visibleCheck")?.checked ? 1 : 0;
 
-        // Parsear categoría
-        const partesCat = categoriaTexto.split(")");
-        const codCategoria = partesCat.length > 1 ? parseInt(partesCat[0].trim(), 10) : null;
-        const descripcionCategoria = partesCat.length > 1 ? partesCat[1].trim() : "";
+    // Parsear categoría
+    const partesCat = categoriaTexto.split(")");
+    const codCategoria = partesCat.length > 1 ? parseInt(partesCat[0].trim(), 10) : null;
+    const descripcionCategoria = partesCat.length > 1 ? partesCat[1].trim() : "";
 
-        // Parsear subcategoría
-        const partesSub = subCategoriaTexto.split(")");
-        const codSubCategoria = partesSub.length > 1 ? parseInt(partesSub[0].trim(), 10) : null;
-        const descripcionSubCategoria = partesSub.length > 1 ? partesSub[1].trim() : "";
+    // Parsear subcategoría
+    const partesSub = subCategoriaTexto.split(")");
+    const codSubCategoria = partesSub.length > 1 ? parseInt(partesSub[0].trim(), 10) : null;
+    const descripcionSubCategoria = partesSub.length > 1 ? partesSub[1].trim() : "";
 
-        if (
-          descripcion !== "" &&
-          Number.isInteger(codCategoria) &&
-          Number.isInteger(codSubCategoria)
-        ) {
-          registrosProcesables.push({
-            id,
-            codigo,
-            codCategoria,
-            codSubCategoria,
-            descripcion,
-            tipo,
-            precio,
-            visible
-          });
-        }
-      });
-
-      if (registrosProcesables.length === 0) {
-        alert("No hay registros válidos para guardar o actualizar.");
-        return;
-      }
-
-      const promesas = registrosProcesables.map(registro => {
-        const {
-          id, codigo, codCategoria, descripcionCategoria,
-          codSubCategoria, descripcionSubCategoria,
-          descripcion, tipo, precio, visible
-        } = registro;
-
-        const url = id > 0
-          ? `http://localhost:3000/products/id/${id}`
-          : `http://localhost:3000/products/create`;
-
-        const method = id > 0 ? "PUT" : "POST";
-
-        return fetch(url, {
-          method,
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            codigo,
-            codCategoria,
-            descripcionCategoria,
-            codSubCategoria,
-            descripcionSubCategoria,
-            descripcion,
-            tipo,
-            precio,
-            visible
-          })
-        })
-          .then(response => {
-            if (!response.ok) throw new Error(`Error al ${method === "POST" ? "crear" : "actualizar"} producto`);
-            return response.json();
-          })
-          .then(data => {
-            console.log(`✅ ${method === "POST" ? "Guardado" : "Actualizado"} con éxito:`, data);
-            return { exito: true };
-          })
-          .catch(error => {
-            console.error("❌ Error al procesar producto:", error);
-            return { exito: false, error };
-          });
-      });
-
-      Promise.all(promesas).then(resultados => {
-        const exitos = resultados.filter(r => r.exito).length;
-        const fallos = resultados.length - exitos;
-
-        if (exitos > 0) {
-          alert(`${exitos} producto(s) guardado(s) con éxito.`);
-          tbody.innerHTML = ""; // Podés recargar desde API si querés
-        }
-
-        if (fallos > 0) {
-          alert(`${fallos} producto(s) fallaron. Revisa la consola.`);
-        }
+    if (
+      descripcion !== "" &&
+      Number.isInteger(codCategoria) &&
+      Number.isInteger(codSubCategoria)
+    ) {
+      registrosProcesables.push({
+        id,
+        codigo,
+        codCategoria,
+        descripcionCategoria,
+        codSubCategoria,
+        descripcionSubCategoria,
+        descripcion,
+        tipo,
+        precio,
+        visible
       });
     }
+  });
+
+  if (registrosProcesables.length === 0) {
+    alert("No hay registros válidos para guardar o actualizar.");
+    return;
+  }
+
+  const promesas = registrosProcesables.map(registro => {
+    const {
+      id, codigo, codCategoria, descripcionCategoria,
+      codSubCategoria, descripcionSubCategoria,
+      descripcion, tipo, precio, visible
+    } = registro;
+
+    const url = id > 0
+      ? `http://localhost:3000/products/id/${id}`
+      : `http://localhost:3000/products/create`;
+
+    const method = id > 0 ? "PUT" : "POST";
+
+    return fetch(url, {
+      method,
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        codigo,
+        codCategoria,
+        descripcionCategoria,
+        codSubCategoria,
+        descripcionSubCategoria,
+        descripcion,
+        tipo,
+        precio,
+        visible
+      })
+    })
+      .then(async response => {
+        const data = await response.json();
+
+        if (!response.ok) {
+          if (data.errores && Array.isArray(data.errores)) {
+            console.warn(`⚠️ Errores de validación para producto "${codigo || descripcion}":`);
+            data.errores.forEach(err => {
+              console.warn(` - [${err.campo}] ${err.mensaje}`);
+            });
+
+            // También podrías mostrarlo en el DOM:
+            // document.getElementById("errores-validacion").innerHTML =
+            //   data.errores.map(e => `<p>⚠️ ${e.campo}: ${e.mensaje}</p>`).join('');
+          } else if (data.error) {
+            console.warn(`⚠️ Error del servidor: ${data.error}`);
+          }
+
+          throw new Error(`Error al ${method === "POST" ? "crear" : "actualizar"} producto`);
+        }
+
+        console.log(`✅ ${method === "POST" ? "Guardado" : "Actualizado"} con éxito:`, data);
+        return { exito: true, data };
+      })
+      .catch(error => {
+        console.error(`❌ Error al procesar producto (${codigo || descripcion}):`, error.message);
+        return { exito: false, error };
+      });
+  });
+
+  Promise.all(promesas).then(resultados => {
+    const exitos = resultados.filter(r => r.exito).length;
+    const fallos = resultados.length - exitos;
+
+    if (exitos > 0) {
+      alert(`${exitos} producto(s) guardado(s) con éxito.`);
+      tbody.innerHTML = ""; // Podés recargar desde API si querés
+    }
+
+    if (fallos > 0) {
+      alert(`${fallos} producto(s) fallaron. Revisa la consola.`);
+    }
+  });
+}
 
   // FUNCIONALIDADES DE EVENTOS DE TECLADO -----------------------------------------------------------------------------------------    
     document.addEventListener('input', function (e) {

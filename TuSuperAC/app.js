@@ -12,7 +12,7 @@ let productDetailRouter = require('./routes/ProductDetail');
 let productCartRouter = require('./routes/productCart');
 let loginClientRouter = require('./routes/loginClient');
 let loginAdminRouter = require('./routes/loginAdmin');
-let registerRouter = require('./routes/register');
+let clientRegister = require('./routes/clientRegister');
 let logoutRouter = require('./routes/logout');
 let logoutAdmin = require('./routes/logoutAdmin');
 let productRouter = require('./routes/product');
@@ -20,6 +20,9 @@ let subCategoryRouter = require('./routes/subCategory');
 let editCategory = require('./routes/editCategory');
 let editSubCategory = require('./routes/editSubCategory');
 let editProduct = require('./routes/editProduct');
+let profile = require('./routes/profile');
+let categoryCard = require('./routes/categoryCard');
+let user = require('./routes/user');
 const cors = require('cors');
 var app = express();
 
@@ -42,6 +45,10 @@ app.use(session({
   saveUninitialized: false
 }));
 
+/*app.use((req, res, next) => {
+  console.log('Session actual ddd:', req.session);
+  next();
+});*/
 
 /*// Middleware para guardar la última película visitada en la sesión
 app.use(function(req, res,next){
@@ -65,7 +72,7 @@ app.use('/productDetail', productDetailRouter);
 app.use('/productCart', productCartRouter);
 app.use('/loginClient', loginClientRouter);
 app.use('/loginAdmin', loginAdminRouter);
-app.use('/registerClient', registerRouter);
+app.use('/clientRegister', clientRegister);
 app.use('/logout', logoutRouter);
 app.use('/logoutAdmin', logoutAdmin);
 app.use('/products', productRouter);
@@ -74,6 +81,9 @@ app.use('/subCategory', subCategoryRouter);
 app.use('/ediCategory', editCategory);
 app.use('/ediSubCategory', editSubCategory);
 app.use('/editProduct', editProduct);
+app.use('/profile', profile);
+app.use('/categoryCard', categoryCard);
+app.use('/users', user);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

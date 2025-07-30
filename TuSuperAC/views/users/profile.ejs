@@ -1,0 +1,143 @@
+<%- include('../partials/head') %>
+<body>
+<%- include('../partials/navBar') %>
+
+<main style="margin-top: 113px;">
+  <div class="container admin-container">
+    <h2 class="mb-4">admin</h2>
+
+    <% 
+    const datos = usuarioD;
+    %>
+
+    <% if (!datos) { %>
+      <div class="alert alert-danger">No hay datos disponibles para mostrar.</div>
+    <% } else { %>
+
+      <form id="profileForm" method="POST" enctype="multipart/form-data">
+        <div class="admin-box row bg-light p-4 rounded shadow">
+          <!-- Imagen -->
+          <div class="col-md-6 text-center mb-4">
+            <img id="logoPreview"
+              src="<%= datos.logo ? '' + datos.logo : '/images/usuariosLogos/default.png' %>"
+              alt="Foto de admin" class="img-fluid rounded mb-3" style="max-width: 200px;">
+            <input type="file" name="logo" id="logoInput" class="form-control mt-2">
+          </div>
+
+          <!-- Formulario -->
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" name="nombre" class="form-control" value="<%= datos.nombre %>" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">RUC/CI</label>
+              <input type="text" name="ruc_ci" class="form-control" value="<%= datos.ruc_ci %>">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Teléfono</label>
+              <input type="text" name="celular" class="form-control" value="<%= datos.celular %>">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Correo</label>
+              <input type="email" name="email" class="form-control" value="<%= datos.email %>">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Contraseña Actual</label>
+              <input type="password" name="passActual" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Contraseña Nueva</label>
+              <input type="password" name="passNew" class="form-control" >
+            </div>
+
+            <input type="hidden" name="tipo" value="<%='tipo' %>">
+            <input type="hidden" name="ci" value="<%= datos.ruc_ci %>">
+
+            <button type="submit" class="btn btn-primary mt-3">Modificar Datos</button>
+          </div>
+        </div>
+      </form>
+    <% } %>
+  </div>
+</main>
+
+<%- include('../partials/footer') %>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('profileForm');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const logoInput = document.getElementById('logoInput');
+    if (logoInput && logoInput.files.length > 0) {
+      formData.set('logo', logoInput.files[0]);
+    }
+
+    const tipo = formData.get('tipo');
+    const ci = formData.get('ci');
+
+    const url = `/profile/upload`;
+      // const url="http://localhost:3000/profile/upload";
+    fetch(url, {
+      method: 'POST',
+      body: formData,
+      credentials: 'include' // 👈 importante si usás cookies/sesión
+    })
+      .then(async response => {
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+          const text = await response.text();
+          throw new Error('Respuesta inesperada:\n' + text);
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data.error) {
+          alert(data.error);
+        } else {
+          console.log('Datos actualizados:', data);
+          alert(data.message || 'Datos actualizados correctamente');
+          if (data.logo) {
+            document.getElementById('logoPreview').src = data.logo;
+            location.reload(); // Recargar la página para reflejar los cambios
+          }
+        }
+      })
+      .catch(err => {
+        console.error('Error al enviar el formulario:', err.message);
+        alert('Ocurrió un error al guardar los datos.');
+      });
+  });
+});
+</script>
+
+
+<style>
+  .admin-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: black;
+  }
+
+  .admin-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 767px) {
+    .col-md-6 {
+      margin-top: 30px;
+    }
+  }
+</style>
+</body>

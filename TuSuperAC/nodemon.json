@@ -1,0 +1,15 @@
+{
+  "ignore": [
+    "public/*",
+    "node_modules/*",
+    "*.test.js",
+    "logs/*"
+  ],
+  "watch": [
+    "server",
+    "routes",
+    "controllers",
+    "app.js"
+  ],
+  "ext": "js,json,ejs"
+}

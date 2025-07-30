@@ -5937,8 +5937,7 @@
     "tipo": "Kl",
     "stock_actual": 100,
     "stock_minimo": 10,
-    "visible": 1,
-    "precio": 3550
+    "visible": 1
   },
   {
     "id": 541,

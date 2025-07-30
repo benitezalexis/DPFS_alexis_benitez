@@ -70,12 +70,16 @@
         })
           .then(response => response.json())
           .then(data => {
+            console.log("Respuesta del servidor:", data);
             if (data.mensaje?.includes("eliminado")) {
               console.log(`✅ Se ha eliminado correctamente de ${tabla}`);
               row.remove();
-            } else {
+              if ((data.mensaje) && data?.mensaje == "Categoría eliminada") {
+                alert("Categoría eliminada correctamente.");
+                row.remove();
+              }
               console.warn("❌ No se pudo eliminar:", data.error || data);
-              alert(`No se pudo eliminar: ${data.error || "Error desconocido"}`);
+              //alert(`No se pudo eliminar: ${data.error || "Error desconocido"}`);
             }
           })
           .catch(error => {
