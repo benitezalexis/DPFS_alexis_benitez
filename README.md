@@ -71,3 +71,12 @@ Ejemplo
 Dentro de cada carpeta, ejecutá:
 
 `npm run dev`
+
+### Ingresar como Administrador en el E-commerce
+La aplicación está diseñada únicamente para gestión interna, no como un marketplace. Por eso, existen dos tipos de acceso: uno para clientes y otro exclusivo para administradores.
+
+El acceso para administradores está separado del login principal para evitar que los clientes puedan visualizar o acceder al formulario de inicio de sesión administrativo.
+
+Para ingresar como administrador, se debe utilizar el siguiente endpoint:
+
+http://localhost:3000/loginAdmin
