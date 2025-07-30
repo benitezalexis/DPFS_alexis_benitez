@@ -82,7 +82,7 @@ Para ingresar como administrador, se debe utilizar el siguiente endpoint:
 http://localhost:3000/loginAdmin
 
 usuario admin de ejemplo
-usuario=pedro@example.com
+correo=pedro@example.com
 contraseña=123456
 
 ## 📅 Alcance
